@@ -1967,6 +1967,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen app_bar_height
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -2030,6 +2031,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2497,6 +2499,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -2769,6 +2772,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2803,6 +2807,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnReview
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2863,6 +2868,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id divider
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -2918,8 +2924,10 @@ id home
 id homeAsUp
 id honorRequest
 id horizontalScrollView
+id horizontalScrollView2
 id horizontal_only
 id hybrid
+id ibFavorite
 id icon
 id icon_group
 id icon_only
@@ -2927,11 +2935,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
 id imageView
 id imageView5
 id imageView6
 id imageView7
+id imageView8
+id imageView9
 id immediateStop
 id included
 id indeterminate
@@ -2940,6 +2949,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv1
+id iv2
+id iv3
+id iv4
 id ivStar
 id jumpToEnd
 id jumpToStart
@@ -3074,6 +3087,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3177,6 +3191,7 @@ id triangle
 id tvAddress
 id tvParkName
 id tvParksTitle
+id tvReviews
 id tvRowGlance
 id tvRowName
 id tvRowRatings
@@ -3329,6 +3344,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_details
 layout activity_maps
+layout content_scrolling
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3404,6 +3420,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3434,6 +3451,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3473,6 +3491,7 @@ string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string large_text
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3567,6 +3586,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_main
 string title_activity_maps
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -4082,6 +4102,9 @@ style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
 style Theme_ExerciseGo
+style Theme_ExerciseGo_AppBarOverlay
+style Theme_ExerciseGo_NoActionBar
+style Theme_ExerciseGo_PopupOverlay
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog

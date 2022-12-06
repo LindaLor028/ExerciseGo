@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.macalester.exercisego">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExerciseGo"
         tools:targetApi="31">
-
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:label="DetailsActivity" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -27,12 +33,11 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" />
-
+            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" /> <!-- AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw -->
         <activity
             android:name=".MapsActivity"
             android:exported="true"
-            android:label="@string/title_activity_maps">
+            android:label="ExerciseGo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

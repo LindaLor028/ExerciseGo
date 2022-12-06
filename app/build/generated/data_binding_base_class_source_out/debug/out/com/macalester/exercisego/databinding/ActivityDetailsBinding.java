@@ -4,9 +4,11 @@ package com.macalester.exercisego.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,10 +25,19 @@ public final class ActivityDetailsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnReview;
+
+  @NonNull
+  public final View divider;
+
+  @NonNull
   public final HorizontalScrollView horizontalScrollView;
 
   @NonNull
-  public final ImageButton imageButton;
+  public final HorizontalScrollView horizontalScrollView2;
+
+  @NonNull
+  public final ImageButton ibFavorite;
 
   @NonNull
   public final ImageView imageView5;
@@ -38,6 +49,27 @@ public final class ActivityDetailsBinding implements ViewBinding {
   public final ImageView imageView7;
 
   @NonNull
+  public final ImageView imageView8;
+
+  @NonNull
+  public final ImageView imageView9;
+
+  @NonNull
+  public final ImageView iv1;
+
+  @NonNull
+  public final ImageView iv2;
+
+  @NonNull
+  public final ImageView iv3;
+
+  @NonNull
+  public final ImageView iv4;
+
+  @NonNull
+  public final ScrollView scrollView2;
+
+  @NonNull
   public final TextView textView3;
 
   @NonNull
@@ -46,19 +78,37 @@ public final class ActivityDetailsBinding implements ViewBinding {
   @NonNull
   public final TextView tvParkName;
 
-  private ActivityDetailsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull HorizontalScrollView horizontalScrollView, @NonNull ImageButton imageButton,
+  @NonNull
+  public final TextView tvReviews;
+
+  private ActivityDetailsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnReview,
+      @NonNull View divider, @NonNull HorizontalScrollView horizontalScrollView,
+      @NonNull HorizontalScrollView horizontalScrollView2, @NonNull ImageButton ibFavorite,
       @NonNull ImageView imageView5, @NonNull ImageView imageView6, @NonNull ImageView imageView7,
-      @NonNull TextView textView3, @NonNull TextView tvAddress, @NonNull TextView tvParkName) {
+      @NonNull ImageView imageView8, @NonNull ImageView imageView9, @NonNull ImageView iv1,
+      @NonNull ImageView iv2, @NonNull ImageView iv3, @NonNull ImageView iv4,
+      @NonNull ScrollView scrollView2, @NonNull TextView textView3, @NonNull TextView tvAddress,
+      @NonNull TextView tvParkName, @NonNull TextView tvReviews) {
     this.rootView = rootView;
+    this.btnReview = btnReview;
+    this.divider = divider;
     this.horizontalScrollView = horizontalScrollView;
-    this.imageButton = imageButton;
+    this.horizontalScrollView2 = horizontalScrollView2;
+    this.ibFavorite = ibFavorite;
     this.imageView5 = imageView5;
     this.imageView6 = imageView6;
     this.imageView7 = imageView7;
+    this.imageView8 = imageView8;
+    this.imageView9 = imageView9;
+    this.iv1 = iv1;
+    this.iv2 = iv2;
+    this.iv3 = iv3;
+    this.iv4 = iv4;
+    this.scrollView2 = scrollView2;
     this.textView3 = textView3;
     this.tvAddress = tvAddress;
     this.tvParkName = tvParkName;
+    this.tvReviews = tvReviews;
   }
 
   @Override
@@ -88,15 +138,33 @@ public final class ActivityDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnReview;
+      Button btnReview = ViewBindings.findChildViewById(rootView, id);
+      if (btnReview == null) {
+        break missingId;
+      }
+
+      id = R.id.divider;
+      View divider = ViewBindings.findChildViewById(rootView, id);
+      if (divider == null) {
+        break missingId;
+      }
+
       id = R.id.horizontalScrollView;
       HorizontalScrollView horizontalScrollView = ViewBindings.findChildViewById(rootView, id);
       if (horizontalScrollView == null) {
         break missingId;
       }
 
-      id = R.id.imageButton;
-      ImageButton imageButton = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton == null) {
+      id = R.id.horizontalScrollView2;
+      HorizontalScrollView horizontalScrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (horizontalScrollView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.ibFavorite;
+      ImageButton ibFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (ibFavorite == null) {
         break missingId;
       }
 
@@ -118,6 +186,48 @@ public final class ActivityDetailsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView8;
+      ImageView imageView8 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView8 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView9;
+      ImageView imageView9 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView9 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv1;
+      ImageView iv1 = ViewBindings.findChildViewById(rootView, id);
+      if (iv1 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv2;
+      ImageView iv2 = ViewBindings.findChildViewById(rootView, id);
+      if (iv2 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv3;
+      ImageView iv3 = ViewBindings.findChildViewById(rootView, id);
+      if (iv3 == null) {
+        break missingId;
+      }
+
+      id = R.id.iv4;
+      ImageView iv4 = ViewBindings.findChildViewById(rootView, id);
+      if (iv4 == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollView2;
+      ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView2 == null) {
+        break missingId;
+      }
+
       id = R.id.textView3;
       TextView textView3 = ViewBindings.findChildViewById(rootView, id);
       if (textView3 == null) {
@@ -136,8 +246,16 @@ public final class ActivityDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailsBinding((ConstraintLayout) rootView, horizontalScrollView,
-          imageButton, imageView5, imageView6, imageView7, textView3, tvAddress, tvParkName);
+      id = R.id.tvReviews;
+      TextView tvReviews = ViewBindings.findChildViewById(rootView, id);
+      if (tvReviews == null) {
+        break missingId;
+      }
+
+      return new ActivityDetailsBinding((ConstraintLayout) rootView, btnReview, divider,
+          horizontalScrollView, horizontalScrollView2, ibFavorite, imageView5, imageView6,
+          imageView7, imageView8, imageView9, iv1, iv2, iv3, iv4, scrollView2, textView3, tvAddress,
+          tvParkName, tvReviews);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

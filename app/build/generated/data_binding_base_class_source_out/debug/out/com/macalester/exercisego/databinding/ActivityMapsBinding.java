@@ -4,10 +4,10 @@ package com.macalester.exercisego.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ActivityMapsBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final RecyclerView rvNearbyParks;
@@ -26,8 +26,8 @@ public final class ActivityMapsBinding implements ViewBinding {
   @NonNull
   public final TextView tvParksTitle;
 
-  private ActivityMapsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView rvNearbyParks, @NonNull TextView tvParksTitle) {
+  private ActivityMapsBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView rvNearbyParks,
+      @NonNull TextView tvParksTitle) {
     this.rootView = rootView;
     this.rvNearbyParks = rvNearbyParks;
     this.tvParksTitle = tvParksTitle;
@@ -35,7 +35,7 @@ public final class ActivityMapsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -72,7 +72,7 @@ public final class ActivityMapsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMapsBinding((ConstraintLayout) rootView, rvNearbyParks, tvParksTitle);
+      return new ActivityMapsBinding((LinearLayout) rootView, rvNearbyParks, tvParksTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
