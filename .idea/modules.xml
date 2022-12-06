@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ExerciseGo.iml" filepath="$PROJECT_DIR$/.idea/modules/ExerciseGo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ExerciseGo.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
