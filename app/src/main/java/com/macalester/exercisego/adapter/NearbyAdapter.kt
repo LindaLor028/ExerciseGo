@@ -14,11 +14,6 @@ import com.macalester.exercisego.databinding.ParkRowBinding
 
 class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
 
-    private val fakeReview = Review("FakeUID", "RandomAuthor", 3f, "Good park! I got a lot of exercise in.")
-    private val fakeReviews = mutableListOf<Review>(
-        fakeReview
-    )
-
     // store list for post Objs
     var  parksList = mutableListOf<Park>()
     // store list for Post IDS (this is bc Firebase store post ids a lil diff)

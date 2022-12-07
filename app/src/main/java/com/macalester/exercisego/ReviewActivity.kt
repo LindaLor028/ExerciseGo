@@ -3,6 +3,7 @@ package com.macalester.exercisego
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 import com.macalester.exercisego.adapter.ReviewAdapter
 import com.macalester.exercisego.data.Park
@@ -39,10 +40,10 @@ class ReviewActivity : AppCompatActivity() {
 
             if (!binding.etReviewInput.text.isNullOrEmpty()) {
                 // create a Review Object
-                val userReview = Review("random_user_id", "author", binding.rating.rating, binding.etReviewInput.text.toString())
+                val userReview = Review("random_user_id", parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
                 // add it to the park object's list of reviews
-
                 // then update the firebase (?) :) :) Nervous laughter ..
+                uploadReview(userReview)
 //            finish()
             }
         }
@@ -56,5 +57,23 @@ class ReviewActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun uploadReview(review : Review) {
+        val reviewCollection = FirebaseFirestore.getInstance()
+            .collection("reviews") // TODO: Do not hard code "reviews"; turn it into a companion obj thing later ! PLEASE
+
+        reviewCollection.add(review)
+            .addOnSuccessListener {
+                Toast.makeText(this,
+                    "Review saved", Toast.LENGTH_SHORT).show()
+
+                finish()
+            }
+            .addOnFailureListener{
+                Toast.makeText(this,
+                    "Error: ${it.message}",
+                    Toast.LENGTH_SHORT).show()
+            }
     }
 }

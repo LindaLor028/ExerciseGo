@@ -2,7 +2,7 @@ package com.macalester.exercisego.data
 
 data class Review(
     var uid: String = "",
-    var author: String = "",
-    var ratings: Float,
+    var parkid : String = "",
+    var ratings: Float = 0f,
     var body: String = ""
 )

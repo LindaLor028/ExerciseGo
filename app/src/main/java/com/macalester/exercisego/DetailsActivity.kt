@@ -5,17 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.Source
+import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.ReviewAdapter
 import com.macalester.exercisego.data.Park
+import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ActivityDetailsBinding
 
 class DetailsActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityDetailsBinding
     lateinit var adapter : ReviewAdapter
+    private var snapshotListener : ListenerRegistration? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,20 +46,21 @@ class DetailsActivity : AppCompatActivity() {
 
                 binding.btnReview.setOnClickListener {
                     // you can probably implement the firebase/ait-forum demo thing :))
-                    startReviewActivity(park)
+                    startReviewActivity(parkKey)
                 }
             }
 
+            queryReviews()
             adapter = ReviewAdapter(this)
             binding.rvReviews.adapter = adapter
             setContentView(binding.root)
         }
     }
 
-    private fun startReviewActivity (park : Park) {
+    private fun startReviewActivity (parkID : String) {
         val intentDetails = Intent()
         intentDetails.setClass(this, ReviewActivity::class.java)
-        intentDetails.putExtra("parkID", "TxMjfJC01GYeblLqNM1S") // TODO: Fix This !
+        intentDetails.putExtra("parkID", parkID) // TODO: Fix This !
         ContextCompat.startActivity(this, intentDetails, null)
     }
 
@@ -81,5 +84,36 @@ class DetailsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    fun queryReviews() {
+        // point to collections table
+        //TODO: Get reviews specific to parkID
+        val queryReviews = FirebaseFirestore.getInstance().collection("reviews")
+
+        val eventListener = object : EventListener<QuerySnapshot> {
+            override fun onEvent(querySnapshot: QuerySnapshot?,
+                                 e: FirebaseFirestoreException?) {
+                if (e != null) {
+                    Toast.makeText(
+                        this@DetailsActivity, "Error: ${e.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    return
+                }
+
+                for (docChange in querySnapshot?.getDocumentChanges()!!) {
+                    if (docChange.type == DocumentChange.Type.ADDED) {
+                        val review = docChange.document.toObject(Review::class.java)
+                        adapter.addReview(review, docChange.document.id)
+                    } else if (docChange.type == DocumentChange.Type.REMOVED) {
+                        adapter.removeReviewByKey(docChange.document.id)
+                    } else if (docChange.type == DocumentChange.Type.MODIFIED) {
+                    }
+                }
+            }
+        }
+
+        snapshotListener = queryReviews.addSnapshotListener(eventListener)
     }
 }
