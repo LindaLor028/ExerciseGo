@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
@@ -13,7 +14,11 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.NearbyAdapter
+import com.macalester.exercisego.data.Park
+import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ActivityMapsBinding
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
@@ -21,6 +26,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
     private lateinit var adapter: NearbyAdapter
     private lateinit var binding: ActivityMapsBinding
+
+    private var snapshotListener : ListenerRegistration? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +43,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
+        binding.btnTest.setOnClickListener {
+            uploadPark()
+        }
         requestNeededPermission()
+
+        queryParks()
     }
 
     fun requestNeededPermission() {
@@ -64,5 +76,63 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val budapest = LatLng(47.49, 19.04)
         mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
+    }
+
+    // query db from firebase
+    fun queryParks() {
+        // point to collections table
+        val queryPosts = FirebaseFirestore.getInstance().collection("parks")
+        // won't be in consistent order unless you order the items!! Like .orderBy(stuff) ..
+        // You can even create filters :)
+
+        val eventListener = object : EventListener<QuerySnapshot> {
+            override fun onEvent(querySnapshot: QuerySnapshot?,
+                                 e: FirebaseFirestoreException?) {
+                if (e != null) {
+                    Toast.makeText(
+                        this@MapsActivity, "Error: ${e.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+                    return
+                }
+
+                for (docChange in querySnapshot?.getDocumentChanges()!!) {
+                    if (docChange.type == DocumentChange.Type.ADDED) {
+                        val park = docChange.document.toObject(Park::class.java)
+                        adapter.addPark(park, docChange.document.id)
+                    } else if (docChange.type == DocumentChange.Type.REMOVED) {
+                        adapter.removeParkByKey(docChange.document.id)
+                    } else if (docChange.type == DocumentChange.Type.MODIFIED) {
+                    }
+                }
+            }
+        }
+
+        snapshotListener = queryPosts.addSnapshotListener(eventListener)
+    }
+
+    private fun uploadPark() {
+//        val fakeReview = Review("FakeUID", "RandomAuthor", 2f, "Didn't have a lot of equipment..")
+//        val fakeReviews = mutableListOf<Review>(
+//            fakeReview
+//        )
+//        val testPark =
+//            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" ,fakeReviews, false)
+//
+//        val postsCollection = FirebaseFirestore.getInstance()
+//            .collection("parks")
+
+//        postsCollection.add(testPark)
+//            .addOnSuccessListener {
+//                Toast.makeText(this,
+//                    "Park saved", Toast.LENGTH_SHORT).show()
+//
+//                finish()
+//            }
+//            .addOnFailureListener{
+//                Toast.makeText(this,
+//                    "Error: ${it.message}",
+//                    Toast.LENGTH_SHORT).show()
+//            }
     }
 }

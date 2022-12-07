@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518501153950",
+    "project_id": "aitexercisego2022",
+    "storage_bucket": "aitexercisego2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518501153950:android:72230c70624cb26e8b4f8f",
+        "android_client_info": {
+          "package_name": "com.macalester.exercisego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518501153950-90tkakj1auqlgt673ld0jjfh8vkgeqgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Q5Yy6LJOmnebRbdl2AhvB5ED8owsQ7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518501153950-90tkakj1auqlgt673ld0jjfh8vkgeqgl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

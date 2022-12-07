@@ -2,35 +2,45 @@ package com.macalester.exercisego.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.location.Location
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.FirebaseFirestore
 import com.macalester.exercisego.DetailsActivity
 import com.macalester.exercisego.data.Park
+import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ParkRowBinding
 
 class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
 
-    private var nearbyParks = mutableListOf<Park>(
-        Park("Happy Exercise Park", 4.5f, "1000 Park Avenue" , false)
+    private val fakeReview = Review("FakeUID", "RandomAuthor", 3f, "Good park! I got a lot of exercise in.")
+    private val fakeReviews = mutableListOf<Review>(
+        fakeReview
     )
+
+    // store list for post Objs
+    var  parksList = mutableListOf<Park>()
+    // store list for Post IDS (this is bc Firebase store post ids a lil diff)
+    var  parkKeys = mutableListOf<String>()
+
     val context: Context
+
 
     constructor(context: Context) {
         this.context = context
     }
 
     override fun getItemCount(): Int {
-        return nearbyParks.size
+        return parksList.size
     }
 
-    private fun startDetailsActivity (park : Park) {
+    private fun startDetailsActivity (index : Int) {
         val intentDetails = Intent()
         intentDetails.setClass(context, DetailsActivity::class.java)
-        intentDetails.putExtra("CITY_TAG", park)
+
+        val parkKey = parkKeys[index]
+        intentDetails.putExtra("parkID", parkKey)
         ContextCompat.startActivity(context, intentDetails, null)
     }
 
@@ -40,8 +50,35 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val currentPark = nearbyParks[holder.adapterPosition]
+        val currentPark = parksList[holder.adapterPosition]
         holder.bind(currentPark)
+    }
+
+    fun addPark(park: Park, key: String) {
+        parksList.add(park)
+        parkKeys.add(key)
+        notifyItemInserted(parksList.lastIndex)
+    }
+
+    private fun removePark(index: Int) {
+        FirebaseFirestore.getInstance().collection(
+            "parks").document(
+            parkKeys[index]
+        ).delete()
+
+        parksList.removeAt(index)
+        parkKeys.removeAt(index)
+        notifyItemRemoved(index)
+    }
+
+    // when somebody else removes an object
+    fun removeParkByKey(key: String) {
+        val index = parkKeys.indexOf(key)
+        if (index != -1) {
+            parksList.removeAt(index)
+            parkKeys.removeAt(index)
+            notifyItemRemoved(index)
+        }
     }
 
     // represents one line and is copied for every other item !
@@ -54,8 +91,8 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
             parkRowBinding.tvRowRatings.text = park.overallRatings.toString()
 
             parkRowBinding.background.setOnClickListener {
-                Log.d("TEST LOG", "background has been clicked ")
-                startDetailsActivity(park)
+                val index = parksList.indexOf(park)
+                startDetailsActivity(index)
             }
 
         }

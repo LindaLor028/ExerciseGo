@@ -1,22 +1,30 @@
 [
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-31:/layout/activity_details.xml",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-34:/layout/activity_details.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/park_row.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/park_row.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-31:/layout/park_row.xml",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-34:/layout/park_row.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_review.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_review.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-31:/layout/activity_maps.xml",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-34:/layout/activity_maps.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_maps.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
     },
     {
-        "merged": "com.macalester.exercisego.app-mergeDebugResources-31:/layout/activity_details.xml",
-        "source": "com.macalester.exercisego.app-main-34:/layout/activity_details.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_details.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_details.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-31:/layout/content_scrolling.xml",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-34:/layout/content_scrolling.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/review_row.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/review_row.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/content_scrolling.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/content_scrolling.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_login.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_login.xml"
     }
 ]

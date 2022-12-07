@@ -8,11 +8,11 @@ import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.macalester.exercisego.R;
@@ -67,7 +67,7 @@ public final class ActivityDetailsBinding implements ViewBinding {
   public final ImageView iv4;
 
   @NonNull
-  public final ScrollView scrollView2;
+  public final RecyclerView rvReviews;
 
   @NonNull
   public final TextView textView3;
@@ -87,7 +87,7 @@ public final class ActivityDetailsBinding implements ViewBinding {
       @NonNull ImageView imageView5, @NonNull ImageView imageView6, @NonNull ImageView imageView7,
       @NonNull ImageView imageView8, @NonNull ImageView imageView9, @NonNull ImageView iv1,
       @NonNull ImageView iv2, @NonNull ImageView iv3, @NonNull ImageView iv4,
-      @NonNull ScrollView scrollView2, @NonNull TextView textView3, @NonNull TextView tvAddress,
+      @NonNull RecyclerView rvReviews, @NonNull TextView textView3, @NonNull TextView tvAddress,
       @NonNull TextView tvParkName, @NonNull TextView tvReviews) {
     this.rootView = rootView;
     this.btnReview = btnReview;
@@ -104,7 +104,7 @@ public final class ActivityDetailsBinding implements ViewBinding {
     this.iv2 = iv2;
     this.iv3 = iv3;
     this.iv4 = iv4;
-    this.scrollView2 = scrollView2;
+    this.rvReviews = rvReviews;
     this.textView3 = textView3;
     this.tvAddress = tvAddress;
     this.tvParkName = tvParkName;
@@ -222,9 +222,9 @@ public final class ActivityDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.scrollView2;
-      ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
-      if (scrollView2 == null) {
+      id = R.id.rvReviews;
+      RecyclerView rvReviews = ViewBindings.findChildViewById(rootView, id);
+      if (rvReviews == null) {
         break missingId;
       }
 
@@ -254,7 +254,7 @@ public final class ActivityDetailsBinding implements ViewBinding {
 
       return new ActivityDetailsBinding((ConstraintLayout) rootView, btnReview, divider,
           horizontalScrollView, horizontalScrollView2, ibFavorite, imageView5, imageView6,
-          imageView7, imageView8, imageView9, iv1, iv2, iv3, iv4, scrollView2, textView3, tvAddress,
+          imageView7, imageView8, imageView9, iv1, iv2, iv3, iv4, rvReviews, textView3, tvAddress,
           tvParkName, tvReviews);
     }
     String missingId = rootView.getResources().getResourceName(id);

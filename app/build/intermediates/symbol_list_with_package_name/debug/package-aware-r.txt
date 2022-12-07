@@ -1305,6 +1305,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1969,6 +1973,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen app_bar_height
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2807,7 +2813,16 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
+id btnLogin
+id btnRegister
 id btnReview
+id btnSubmit
+id btnTest
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2889,6 +2904,9 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etEmail
+id etPassword
+id etReviewInput
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -2936,6 +2954,8 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView3
+id imageView4
 id imageView5
 id imageView6
 id imageView7
@@ -3067,6 +3087,7 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id rating
 id ratio
 id rectangles
 id reverseSawtooth
@@ -3077,6 +3098,7 @@ id right_side
 id rounded
 id row_index_key
 id rvNearbyParks
+id rvReviews
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -3087,7 +3109,6 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
-id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -3191,10 +3212,14 @@ id triangle
 id tvAddress
 id tvParkName
 id tvParksTitle
+id tvRatings
+id tvReviewPreview
+id tvReviewTitle
 id tvReviews
 id tvRowGlance
 id tvRowName
 id tvRowRatings
+id tvUsername
 id unchecked
 id uniform
 id unlabeled
@@ -3343,7 +3368,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_details
+layout activity_login
 layout activity_maps
+layout activity_review
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout content_scrolling
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3416,6 +3445,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout park_row
+layout review_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3424,6 +3454,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3483,11 +3514,21 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
+string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -3584,6 +3625,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_main
@@ -4798,3 +4840,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml image_share_filepaths

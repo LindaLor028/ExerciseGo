@@ -4,6 +4,7 @@ package com.macalester.exercisego.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,14 +22,18 @@ public final class ActivityMapsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnTest;
+
+  @NonNull
   public final RecyclerView rvNearbyParks;
 
   @NonNull
   public final TextView tvParksTitle;
 
-  private ActivityMapsBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView rvNearbyParks,
-      @NonNull TextView tvParksTitle) {
+  private ActivityMapsBinding(@NonNull LinearLayout rootView, @NonNull Button btnTest,
+      @NonNull RecyclerView rvNearbyParks, @NonNull TextView tvParksTitle) {
     this.rootView = rootView;
+    this.btnTest = btnTest;
     this.rvNearbyParks = rvNearbyParks;
     this.tvParksTitle = tvParksTitle;
   }
@@ -60,6 +65,12 @@ public final class ActivityMapsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnTest;
+      Button btnTest = ViewBindings.findChildViewById(rootView, id);
+      if (btnTest == null) {
+        break missingId;
+      }
+
       id = R.id.rvNearbyParks;
       RecyclerView rvNearbyParks = ViewBindings.findChildViewById(rootView, id);
       if (rvNearbyParks == null) {
@@ -72,7 +83,7 @@ public final class ActivityMapsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMapsBinding((LinearLayout) rootView, rvNearbyParks, tvParksTitle);
+      return new ActivityMapsBinding((LinearLayout) rootView, btnTest, rvNearbyParks, tvParksTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
