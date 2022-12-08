@@ -9,4 +9,12 @@ data class Park(
     // var reviews : MutableList<Review> = mutableListOf(Review("", "", 0f, "")),
     // var location : LatLng,
     // you need park coordinates, park reviews (you might need review data type)
-    var isFavorite : Boolean = false)
+    var hasCycle : Boolean = false,
+    var hasTwister : Boolean = false,
+    var hasPress : Boolean = false,
+    var hasWalker : Boolean = false,
+    var hasBar : Boolean = false,
+    var hasBench : Boolean = false,
+    var isFavorite : Boolean = false
+
+)

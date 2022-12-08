@@ -26,31 +26,25 @@ class DetailsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setTitle("Park Details")
 
-        if (intent.hasExtra("parkID") &&
-            !intent.getStringExtra("parkID").isNullOrEmpty()) {
+        var parkKey = intent.getStringExtra("parkID")!!
+        var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
+        firebasePark.get().addOnSuccessListener {
+            val park = it.toObject(Park::class.java)
 
-            var parkKey = intent.getStringExtra("parkID")!!
-            var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
-            firebasePark.get().addOnSuccessListener {
-                val park = it.toObject(Park::class.java)
+            binding.tvParkName.text = park!!.name
+            binding.tvAddress.text = park!!.address
 
-                binding.tvParkName.text = park!!.name
-                binding.tvAddress.text = park!!.address
+            setFavoriteLogo(park!!, parkKey)
 
-                setFavoriteLogo(park!!, parkKey)
-
-                binding.ibFavorite.setOnClickListener {
-                    park.isFavorite = !park.isFavorite
-                    setFavoriteLogo(park, parkKey)
-                }
-
-                binding.btnReview.setOnClickListener {
-                    // you can probably implement the firebase/ait-forum demo thing :))
-                    startReviewActivity(parkKey)
-                }
+            binding.ibFavorite.setOnClickListener {
+                park.isFavorite = !park.isFavorite
+                setFavoriteLogo(park, parkKey)
             }
+            binding.btnReview.setOnClickListener {
+                // you can probably implement the firebase/ait-forum demo thing :))
+                startReviewActivity(parkKey) }
 
-            queryReviews()
+            queryReviews(parkKey)
             adapter = ReviewAdapter(this)
             binding.rvReviews.adapter = adapter
             setContentView(binding.root)
@@ -86,7 +80,7 @@ class DetailsActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    fun queryReviews() {
+    fun queryReviews(parkKey : String) {
         // point to collections table
         //TODO: Get reviews specific to parkID
         val queryReviews = FirebaseFirestore.getInstance().collection("reviews")
@@ -105,7 +99,9 @@ class DetailsActivity : AppCompatActivity() {
                 for (docChange in querySnapshot?.getDocumentChanges()!!) {
                     if (docChange.type == DocumentChange.Type.ADDED) {
                         val review = docChange.document.toObject(Review::class.java)
-                        adapter.addReview(review, docChange.document.id)
+                        if (review.parkid == parkKey) {
+                            adapter.addReview(review, docChange.document.id)
+                        }
                     } else if (docChange.type == DocumentChange.Type.REMOVED) {
                         adapter.removeReviewByKey(docChange.document.id)
                     } else if (docChange.type == DocumentChange.Type.MODIFIED) {
@@ -113,7 +109,6 @@ class DetailsActivity : AppCompatActivity() {
                 }
             }
         }
-
         snapshotListener = queryReviews.addSnapshotListener(eventListener)
     }
 }

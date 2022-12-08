@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.macalester.exercisego.adapter.ReviewAdapter
 import com.macalester.exercisego.data.Park
@@ -21,17 +22,8 @@ class ReviewActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         var parkKey = intent.getStringExtra("parkID")!!
-        // TODO: Do I even need this? :) Looks like I just need the parkID information !
-//        var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
-//        firebasePark.get().addOnSuccessListener {
-//        }
-
-        // use parkID to give it to reviews key
 
         setContentView(binding.root)
-
-       //binding.tvReviewTitle.text = park.name
-
 
         // TODO: Verify if we even need this (not sure if we do LOL)
         binding.rating.setOnRatingBarChangeListener { ratingBar, fl, b ->  }
@@ -40,7 +32,7 @@ class ReviewActivity : AppCompatActivity() {
 
             if (!binding.etReviewInput.text.isNullOrEmpty()) {
                 // create a Review Object
-                val userReview = Review("random_user_id", parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
+                val userReview = Review(FirebaseAuth.getInstance().currentUser!!.uid, parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
                 // add it to the park object's list of reviews
                 // then update the firebase (?) :) :) Nervous laughter ..
                 uploadReview(userReview)

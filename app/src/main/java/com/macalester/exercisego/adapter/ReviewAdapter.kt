@@ -70,7 +70,7 @@ class ReviewAdapter : RecyclerView.Adapter<ReviewAdapter.ViewHolder> {
     {
         fun bind(review : Review) {
             reviewRowBinding.tvUsername.text = review.uid
-            reviewRowBinding.tvReviewPreview.text = review.body // TODO: Only get XX number of chars to show in the preview
+            reviewRowBinding.tvReviewPreview.text = review.body
             reviewRowBinding.tvRatings.text = review.ratings.toString()
 
             // TODO: Implement a dialogue that users can click on to view the whole review
