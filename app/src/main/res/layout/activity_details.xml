@@ -94,15 +94,6 @@
         app:layout_constraintStart_toStartOf="@+id/tvAddress"
         app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
 
-    <ImageButton
-        android:id="@+id/ibFavorite"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-        app:srcCompat="@android:drawable/btn_star_big_off" />
-
     <HorizontalScrollView
         android:id="@+id/svEquipment"
         android:layout_width="370dp"

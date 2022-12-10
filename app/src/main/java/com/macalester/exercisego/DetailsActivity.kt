@@ -35,20 +35,6 @@ class DetailsActivity : AppCompatActivity() {
             binding.tvParkName.text = park!!.name
             binding.tvAddress.text = park!!.address
 
-            setFavoriteLogo(park!!, parkKey)
-
-            binding.ibFavorite.setOnClickListener {
-                setFavoriteLogo(park, parkKey)
-
-                val postsCollection = FirebaseFirestore.getInstance().collection("parks")
-                if (park.isFavorite) {
-                    postsCollection.document(parkKey).update("isFavorite", false)
-                }
-                else {
-                    postsCollection.document(parkKey).update("isFavorite", true)
-                }
-            }
-
             binding.btnReview.setOnClickListener {
                 // you can probably implement the firebase/ait-forum demo thing :))
                 startReviewActivity(parkKey) }
@@ -99,17 +85,6 @@ class DetailsActivity : AppCompatActivity() {
         intentDetails.setClass(this, ReviewActivity::class.java)
         intentDetails.putExtra("parkID", parkID) // TODO: Fix This !
         ContextCompat.startActivity(this, intentDetails, null)
-    }
-
-    private fun setFavoriteLogo(park : Park, parkKey : String) {
-        if (park.isFavorite) {
-            // set star logo to turned on
-            binding.ibFavorite.setImageResource(com.google.android.gms.base.R.drawable.common_google_signin_btn_icon_light_normal)
-        }
-        else {
-            // set star logo to turned off
-            binding.ibFavorite.setImageResource(com.google.android.gms.base.R.drawable.common_google_signin_btn_icon_disabled)
-        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

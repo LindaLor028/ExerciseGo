@@ -155,11 +155,11 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/cac
 	android:fullBackupContent
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:16:9-46
 	tools:targetApi
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme

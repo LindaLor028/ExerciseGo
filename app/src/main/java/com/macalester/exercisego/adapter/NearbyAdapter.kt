@@ -84,16 +84,18 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
         fun bind(park : Park) {
 
             parkRowBinding.tvRowName.text = park.name
-            parkRowBinding.tvRowRatings.text = park.overallRatings.toString()
+
+            var distance = park.distance.toString()
+            if (distance.length > 3) {
+                distance = distance.substring(0..1)
+            }
+            parkRowBinding.tvRowDistance.text = "${distance} m"
 
             parkRowBinding.background.setOnClickListener {
-                // You need to get a marker on the map with the park name :)
-            }
-
-            parkRowBinding.btnMore.setOnClickListener {
                 val index = parksList.indexOf(park)
                 startDetailsActivity(index)
             }
+
 
         }
     }

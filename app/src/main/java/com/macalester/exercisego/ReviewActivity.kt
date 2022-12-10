@@ -2,6 +2,7 @@ package com.macalester.exercisego
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -29,6 +30,7 @@ class ReviewActivity : AppCompatActivity() {
             if (!binding.etReviewInput.text.isNullOrEmpty()) {
                 val userReview = Review(FirebaseAuth.getInstance().currentUser!!.email!!, parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
                 uploadReview(userReview)
+
                 finish()
             }
         }
@@ -52,7 +54,6 @@ class ReviewActivity : AppCompatActivity() {
             .addOnSuccessListener {
                 Toast.makeText(this,
                     "Review saved", Toast.LENGTH_SHORT).show()
-
                 finish()
             }
             .addOnFailureListener{

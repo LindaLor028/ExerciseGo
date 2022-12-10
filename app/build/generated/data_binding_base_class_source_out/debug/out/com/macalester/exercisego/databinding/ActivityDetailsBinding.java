@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -36,9 +35,6 @@ public final class ActivityDetailsBinding implements ViewBinding {
 
   @NonNull
   public final HorizontalScrollView horizontalScrollView;
-
-  @NonNull
-  public final ImageButton ibFavorite;
 
   @NonNull
   public final ImageView imageView5;
@@ -78,18 +74,17 @@ public final class ActivityDetailsBinding implements ViewBinding {
 
   private ActivityDetailsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnReview,
       @NonNull View divider, @NonNull EquipmentsRowBinding equipmentsRow,
-      @NonNull HorizontalScrollView horizontalScrollView, @NonNull ImageButton ibFavorite,
-      @NonNull ImageView imageView5, @NonNull ImageView imageView6, @NonNull ImageView imageView7,
-      @NonNull ImageView imageView8, @NonNull ImageView imageView9,
-      @NonNull LinearLayout llEquipment, @NonNull RecyclerView rvReviews,
-      @NonNull HorizontalScrollView svEquipment, @NonNull TextView textView3,
-      @NonNull TextView tvAddress, @NonNull TextView tvParkName, @NonNull TextView tvReviews) {
+      @NonNull HorizontalScrollView horizontalScrollView, @NonNull ImageView imageView5,
+      @NonNull ImageView imageView6, @NonNull ImageView imageView7, @NonNull ImageView imageView8,
+      @NonNull ImageView imageView9, @NonNull LinearLayout llEquipment,
+      @NonNull RecyclerView rvReviews, @NonNull HorizontalScrollView svEquipment,
+      @NonNull TextView textView3, @NonNull TextView tvAddress, @NonNull TextView tvParkName,
+      @NonNull TextView tvReviews) {
     this.rootView = rootView;
     this.btnReview = btnReview;
     this.divider = divider;
     this.equipmentsRow = equipmentsRow;
     this.horizontalScrollView = horizontalScrollView;
-    this.ibFavorite = ibFavorite;
     this.imageView5 = imageView5;
     this.imageView6 = imageView6;
     this.imageView7 = imageView7;
@@ -153,12 +148,6 @@ public final class ActivityDetailsBinding implements ViewBinding {
       id = R.id.horizontalScrollView;
       HorizontalScrollView horizontalScrollView = ViewBindings.findChildViewById(rootView, id);
       if (horizontalScrollView == null) {
-        break missingId;
-      }
-
-      id = R.id.ibFavorite;
-      ImageButton ibFavorite = ViewBindings.findChildViewById(rootView, id);
-      if (ibFavorite == null) {
         break missingId;
       }
 
@@ -235,9 +224,9 @@ public final class ActivityDetailsBinding implements ViewBinding {
       }
 
       return new ActivityDetailsBinding((ConstraintLayout) rootView, btnReview, divider,
-          binding_equipmentsRow, horizontalScrollView, ibFavorite, imageView5, imageView6,
-          imageView7, imageView8, imageView9, llEquipment, rvReviews, svEquipment, textView3,
-          tvAddress, tvParkName, tvReviews);
+          binding_equipmentsRow, horizontalScrollView, imageView5, imageView6, imageView7,
+          imageView8, imageView9, llEquipment, rvReviews, svEquipment, textView3, tvAddress,
+          tvParkName, tvReviews);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

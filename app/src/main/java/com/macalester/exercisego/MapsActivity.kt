@@ -16,6 +16,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.firestore.*
@@ -43,18 +44,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         adapter = NearbyAdapter(this)
         binding.rvNearbyParks.adapter = adapter
 
-//        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
-//        val mapFragment = supportFragmentManager
-//            .findFragmentById(R.id.map) as SupportMapFragment
-//        mapFragment.getMapAsync(this)
+        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
 
         locationManager = getSystemService(android.content.Context.LOCATION_SERVICE) as android.location.LocationManager
         shareUserLocation()
-//        addParkMarkers()
+        addParkMarkers()
 
         binding.btnTest.setOnClickListener {
-            //uploadPark()
-            //shareUserLocation()
+            uploadPark()
             calculateParkDistance()
         }
         requestNeededPermission()
@@ -64,20 +64,17 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-        //mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ))
         // Add a marker in Sydney and move the camera
         val budapest = LatLng(47.49, 19.04)
         mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
 
-//        val cameraPosition = CameraPosition.Builder()
-//            .zoom(17f) // Sets the zoom
-//            .bearing(90f) // Sets the orientation of the camera to east
-//            .tilt(30f) // Sets the tilt of the camera to 30 degrees
-//            .build() // Creates a CameraPosition from the builder
-
-//        mMap.setMinZoomPreference(17f)
-        //mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) )
+        val cameraPosition = CameraPosition.Builder()
+            .target(budapest)
+            .zoom(15f )
+            .bearing(-45f )
+            .build()
+        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
 
     }
 
@@ -189,7 +186,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         val parkLong = 19.0669936
 
         val testPark =
-            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , 0.0, false, true, true, false, true, false)
+            Park("Hunyadi Tér" , "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , 0.0, false, true, true, false, true)
 
         val postsCollection = FirebaseFirestore.getInstance()
             .collection("parks")

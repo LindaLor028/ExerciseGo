@@ -2593,6 +2593,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable appicon
 drawable avd_hide_password
 drawable avd_show_password
 drawable barsicon
@@ -2631,6 +2632,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable equipmenticons
+drawable exercisego
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
@@ -2644,6 +2646,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable loginlogo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -2826,7 +2829,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btnLogin
-id btnMore
 id btnRegister
 id btnReview
 id btnSubmit
@@ -2953,7 +2955,6 @@ id honorRequest
 id horizontalScrollView
 id horizontal_only
 id hybrid
-id ibFavorite
 id icon
 id icon_group
 id icon_only
@@ -2983,7 +2984,6 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id ivStar
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -2998,6 +2998,7 @@ id linear
 id listMode
 id list_item
 id llEquipment
+id map
 id marquee
 id masked
 id match_constraint
@@ -3231,9 +3232,8 @@ id tvRatings
 id tvReviewPreview
 id tvReviewTitle
 id tvReviews
-id tvRowGlance
+id tvRowDistance
 id tvRowName
-id tvRowRatings
 id tvTwisters
 id tvUserLocation
 id tvUsername

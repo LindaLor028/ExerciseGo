@@ -5,7 +5,6 @@ import com.google.android.gms.maps.model.LatLng
 
 data class Park(
     var name : String = "",
-    var overallRatings : Float = 0f,
     var address : String = "",
     var latitude: Double = 0.0,
     var longitude: Double = 0.0,
@@ -16,7 +15,6 @@ data class Park(
     var hasPress : Boolean = false,
     var hasWalker : Boolean = false,
     var hasBar : Boolean = false,
-    var hasBench : Boolean = false,
-    var isFavorite : Boolean = false
+    var hasBench : Boolean = false
 
 )

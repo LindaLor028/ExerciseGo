@@ -4,7 +4,6 @@ package com.macalester.exercisego.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -25,34 +24,21 @@ public final class ParkRowBinding implements ViewBinding {
   public final ConstraintLayout background;
 
   @NonNull
-  public final Button btnMore;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
-  public final ImageView ivStar;
-
-  @NonNull
-  public final TextView tvRowGlance;
+  public final TextView tvRowDistance;
 
   @NonNull
   public final TextView tvRowName;
 
-  @NonNull
-  public final TextView tvRowRatings;
-
   private ParkRowBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout background,
-      @NonNull Button btnMore, @NonNull ImageView imageView, @NonNull ImageView ivStar,
-      @NonNull TextView tvRowGlance, @NonNull TextView tvRowName, @NonNull TextView tvRowRatings) {
+      @NonNull ImageView imageView, @NonNull TextView tvRowDistance, @NonNull TextView tvRowName) {
     this.rootView = rootView;
     this.background = background;
-    this.btnMore = btnMore;
     this.imageView = imageView;
-    this.ivStar = ivStar;
-    this.tvRowGlance = tvRowGlance;
+    this.tvRowDistance = tvRowDistance;
     this.tvRowName = tvRowName;
-    this.tvRowRatings = tvRowRatings;
   }
 
   @Override
@@ -84,27 +70,15 @@ public final class ParkRowBinding implements ViewBinding {
     missingId: {
       ConstraintLayout background = (ConstraintLayout) rootView;
 
-      id = R.id.btnMore;
-      Button btnMore = ViewBindings.findChildViewById(rootView, id);
-      if (btnMore == null) {
-        break missingId;
-      }
-
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
         break missingId;
       }
 
-      id = R.id.ivStar;
-      ImageView ivStar = ViewBindings.findChildViewById(rootView, id);
-      if (ivStar == null) {
-        break missingId;
-      }
-
-      id = R.id.tvRowGlance;
-      TextView tvRowGlance = ViewBindings.findChildViewById(rootView, id);
-      if (tvRowGlance == null) {
+      id = R.id.tvRowDistance;
+      TextView tvRowDistance = ViewBindings.findChildViewById(rootView, id);
+      if (tvRowDistance == null) {
         break missingId;
       }
 
@@ -114,14 +88,8 @@ public final class ParkRowBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvRowRatings;
-      TextView tvRowRatings = ViewBindings.findChildViewById(rootView, id);
-      if (tvRowRatings == null) {
-        break missingId;
-      }
-
-      return new ParkRowBinding((ConstraintLayout) rootView, background, btnMore, imageView, ivStar,
-          tvRowGlance, tvRowName, tvRowRatings);
+      return new ParkRowBinding((ConstraintLayout) rootView, background, imageView, tvRowDistance,
+          tvRowName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
