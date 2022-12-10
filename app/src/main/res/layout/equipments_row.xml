@@ -9,6 +9,9 @@
         android:id="@+id/imgBars"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/barsicon" />
@@ -17,6 +20,7 @@
         android:id="@+id/imgBench"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgBars"
         app:layout_constraintTop_toTopOf="@+id/imgBars"
@@ -26,6 +30,7 @@
         android:id="@+id/imgCycle"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgBench"
         app:layout_constraintTop_toTopOf="@+id/imgBench"
@@ -35,6 +40,7 @@
         android:id="@+id/imgPress"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgTwist"
         app:layout_constraintTop_toTopOf="@+id/imgTwist"
@@ -44,6 +50,7 @@
         android:id="@+id/imgTwist"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgWalker"
         app:layout_constraintTop_toTopOf="@+id/imgWalker"
@@ -53,6 +60,7 @@
         android:id="@+id/imgWalker"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:visibility="gone"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgCycle"
         app:layout_constraintTop_toTopOf="@+id/imgCycle"
@@ -63,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bars"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgBars"
         app:layout_constraintStart_toStartOf="@+id/imgBars"
         app:layout_constraintTop_toBottomOf="@+id/imgBars" />
@@ -72,6 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Benches"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgBench"
         app:layout_constraintStart_toStartOf="@+id/imgBench"
         app:layout_constraintTop_toBottomOf="@+id/imgBench" />
@@ -81,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cycles"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgCycle"
         app:layout_constraintStart_toStartOf="@+id/imgCycle"
         app:layout_constraintTop_toBottomOf="@+id/imgCycle" />
@@ -90,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Walkers"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgWalker"
         app:layout_constraintStart_toStartOf="@+id/imgWalker"
         app:layout_constraintTop_toBottomOf="@+id/imgWalker" />
@@ -99,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Twisters"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgTwist"
         app:layout_constraintStart_toStartOf="@+id/imgTwist"
         app:layout_constraintTop_toBottomOf="@+id/imgTwist" />
@@ -108,6 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Presses"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/imgPress"
         app:layout_constraintStart_toStartOf="@+id/imgPress"
         app:layout_constraintTop_toBottomOf="@+id/imgPress" />

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.google.firebase.firestore.*
@@ -37,17 +38,59 @@ class DetailsActivity : AppCompatActivity() {
             setFavoriteLogo(park!!, parkKey)
 
             binding.ibFavorite.setOnClickListener {
-                park.isFavorite = !park.isFavorite
                 setFavoriteLogo(park, parkKey)
+
+                val postsCollection = FirebaseFirestore.getInstance().collection("parks")
+                if (park.isFavorite) {
+                    postsCollection.document(parkKey).update("isFavorite", false)
+                }
+                else {
+                    postsCollection.document(parkKey).update("isFavorite", true)
+                }
             }
+
             binding.btnReview.setOnClickListener {
                 // you can probably implement the firebase/ait-forum demo thing :))
                 startReviewActivity(parkKey) }
 
             queryReviews(parkKey)
+            setUpEquipmentRow(park)
             adapter = ReviewAdapter(this)
             binding.rvReviews.adapter = adapter
             setContentView(binding.root)
+        }
+    }
+
+    //TODO: Check if we can make this less redundant?
+    private fun setUpEquipmentRow(park: Park) {
+        // go through its park attributes and set visibility as needed
+        if (park.hasBar) {
+            binding.equipmentsRow.imgBars.visibility = View.VISIBLE
+            binding.equipmentsRow.tvBars.visibility = View.VISIBLE
+        }
+        if (park.hasBench) {
+            binding.equipmentsRow.imgBench.visibility = View.VISIBLE
+            binding.equipmentsRow.tvBenches.visibility = View.VISIBLE
+        }
+        if (park.hasCycle) {
+            binding.equipmentsRow.imgCycle.visibility = View.VISIBLE
+            binding.equipmentsRow.tvCycles.visibility = View.VISIBLE
+        }
+        if (park.hasPress) {
+            binding.equipmentsRow.imgPress.visibility = View.VISIBLE
+            binding.equipmentsRow.tvPresses.visibility = View.VISIBLE
+        }
+        if (park.hasTwister) {
+            binding.equipmentsRow.imgTwist.visibility = View.VISIBLE
+            binding.equipmentsRow.tvTwisters.visibility = View.VISIBLE
+        }
+        if (park.hasPress) {
+            binding.equipmentsRow.imgPress.visibility = View.VISIBLE
+            binding.equipmentsRow.tvPresses.visibility = View.VISIBLE
+        }
+        if(park.hasWalker) {
+            binding.equipmentsRow.imgWalker.visibility = View.VISIBLE
+            binding.equipmentsRow.tvWalkers.visibility = View.VISIBLE
         }
     }
 
@@ -58,7 +101,6 @@ class DetailsActivity : AppCompatActivity() {
         ContextCompat.startActivity(this, intentDetails, null)
     }
 
-    // TODO: Figure out how to update park favorite status, we when we go back; it is now favorited !
     private fun setFavoriteLogo(park : Park, parkKey : String) {
         if (park.isFavorite) {
             // set star logo to turned on

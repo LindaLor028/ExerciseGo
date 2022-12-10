@@ -1,25 +1,27 @@
 package com.macalester.exercisego
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import androidx.appcompat.app.AppCompatActivity
+import android.location.Location
+import android.location.LocationRequest
 import android.os.Bundle
+import android.os.Looper
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.NearbyAdapter
 import com.macalester.exercisego.data.Park
-import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ActivityMapsBinding
+
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -38,7 +40,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         adapter = NearbyAdapter(this)
         binding.rvNearbyParks.adapter = adapter
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -76,6 +78,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val budapest = LatLng(47.49, 19.04)
         mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
+
+        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
     }
 
     // query db from firebase
@@ -112,27 +116,24 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun uploadPark() {
-//        val fakeReview = Review("FakeUID", "RandomAuthor", 2f, "Didn't have a lot of equipment..")
-//        val fakeReviews = mutableListOf<Review>(
-//            fakeReview
-//        )
-//        val testPark =
-//            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" ,fakeReviews, false)
-//
-//        val postsCollection = FirebaseFirestore.getInstance()
-//            .collection("parks")
 
-//        postsCollection.add(testPark)
-//            .addOnSuccessListener {
-//                Toast.makeText(this,
-//                    "Park saved", Toast.LENGTH_SHORT).show()
-//
-//                finish()
-//            }
-//            .addOnFailureListener{
-//                Toast.makeText(this,
-//                    "Error: ${it.message}",
-//                    Toast.LENGTH_SHORT).show()
-//            }
+        val testPark =
+            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , true, false, true, true, false, true, false)
+
+        val postsCollection = FirebaseFirestore.getInstance()
+            .collection("parks")
+
+        postsCollection.add(testPark)
+            .addOnSuccessListener {
+                Toast.makeText(this,
+                    "Park saved", Toast.LENGTH_SHORT).show()
+
+                finish()
+            }
+            .addOnFailureListener{
+                Toast.makeText(this,
+                    "Error: ${it.message}",
+                    Toast.LENGTH_SHORT).show()
+            }
     }
 }

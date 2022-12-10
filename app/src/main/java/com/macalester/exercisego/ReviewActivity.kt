@@ -26,17 +26,13 @@ class ReviewActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // TODO: Verify if we even need this (not sure if we do LOL)
-        binding.rating.setOnRatingBarChangeListener { ratingBar, fl, b ->  }
+//        binding.rating.setOnRatingBarChangeListener { ratingBar, fl, b ->  }
 
         binding.btnSubmit.setOnClickListener {
-
             if (!binding.etReviewInput.text.isNullOrEmpty()) {
-                // create a Review Object
-                val userReview = Review(FirebaseAuth.getInstance().currentUser!!.uid, parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
-                // add it to the park object's list of reviews
-                // then update the firebase (?) :) :) Nervous laughter ..
+                val userReview = Review(FirebaseAuth.getInstance().currentUser!!.email!!, parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
                 uploadReview(userReview)
-//            finish()
+                finish()
             }
         }
     }
