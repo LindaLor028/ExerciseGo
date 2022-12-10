@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.macalester.exercisego.DetailsActivity
+import com.macalester.exercisego.MapsActivity
 import com.macalester.exercisego.data.Park
 import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ParkRowBinding
@@ -86,6 +87,10 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
             parkRowBinding.tvRowRatings.text = park.overallRatings.toString()
 
             parkRowBinding.background.setOnClickListener {
+                // You need to get a marker on the map with the park name :)
+            }
+
+            parkRowBinding.btnMore.setOnClickListener {
                 val index = parksList.indexOf(park)
                 startDetailsActivity(index)
             }

@@ -4,6 +4,7 @@ package com.macalester.exercisego.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,6 +25,9 @@ public final class ParkRowBinding implements ViewBinding {
   public final ConstraintLayout background;
 
   @NonNull
+  public final Button btnMore;
+
+  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -39,10 +43,11 @@ public final class ParkRowBinding implements ViewBinding {
   public final TextView tvRowRatings;
 
   private ParkRowBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout background,
-      @NonNull ImageView imageView, @NonNull ImageView ivStar, @NonNull TextView tvRowGlance,
-      @NonNull TextView tvRowName, @NonNull TextView tvRowRatings) {
+      @NonNull Button btnMore, @NonNull ImageView imageView, @NonNull ImageView ivStar,
+      @NonNull TextView tvRowGlance, @NonNull TextView tvRowName, @NonNull TextView tvRowRatings) {
     this.rootView = rootView;
     this.background = background;
+    this.btnMore = btnMore;
     this.imageView = imageView;
     this.ivStar = ivStar;
     this.tvRowGlance = tvRowGlance;
@@ -79,6 +84,12 @@ public final class ParkRowBinding implements ViewBinding {
     missingId: {
       ConstraintLayout background = (ConstraintLayout) rootView;
 
+      id = R.id.btnMore;
+      Button btnMore = ViewBindings.findChildViewById(rootView, id);
+      if (btnMore == null) {
+        break missingId;
+      }
+
       id = R.id.imageView;
       ImageView imageView = ViewBindings.findChildViewById(rootView, id);
       if (imageView == null) {
@@ -109,7 +120,7 @@ public final class ParkRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ParkRowBinding((ConstraintLayout) rootView, background, imageView, ivStar,
+      return new ParkRowBinding((ConstraintLayout) rootView, background, btnMore, imageView, ivStar,
           tvRowGlance, tvRowName, tvRowRatings);
     }
     String missingId = rootView.getResources().getResourceName(id);

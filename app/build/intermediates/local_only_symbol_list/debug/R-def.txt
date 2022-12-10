@@ -22,6 +22,7 @@ drawable walkericon
 id action_settings
 id background
 id btnLogin
+id btnMore
 id btnRegister
 id btnReview
 id btnSubmit

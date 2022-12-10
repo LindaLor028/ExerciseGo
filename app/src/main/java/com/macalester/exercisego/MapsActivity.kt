@@ -60,7 +60,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         shareUserLocation()
 
         binding.btnTest.setOnClickListener {
-//            uploadPark()
+            uploadPark()
             //shareUserLocation()
         }
         requestNeededPermission()
@@ -70,13 +70,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-
         // Add a marker in Sydney and move the camera
         val budapest = LatLng(47.49, 19.04)
         mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
-
-        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
     }
 
     fun requestNeededPermission() {
@@ -98,7 +95,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
 
     private fun shareUserLocation() {
-
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
@@ -145,9 +141,28 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         snapshotListener = queryPosts.addSnapshotListener(eventListener)
     }
 
+    fun previewPark(parkKey : String) {
+        // firebase call the park by index
+        //  val parkKey = parkKeys[index] <-- we need the parkKey sent to us; not the index!
+        var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
+        firebasePark.get().addOnSuccessListener {
+            val park = it.toObject(Park::class.java)
+            val parkLocation = LatLng(park!!.latitude, park!!.longitude)
+            mMap.addMarker(MarkerOptions().position(parkLocation).title(park.name))
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(parkLocation))
+        }
+        // add a marker on the map
+            // figure out how to remove the marker once the user clicks "out"
+        //
+
+    }
+
     private fun uploadPark() {
+        val parkLat = 47.5057808
+        val parkLong = 19.0669936
+
         val testPark =
-            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , true, false, true, true, false, true, false)
+            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , false, true, true, false, true, false)
 
         val postsCollection = FirebaseFirestore.getInstance()
             .collection("parks")

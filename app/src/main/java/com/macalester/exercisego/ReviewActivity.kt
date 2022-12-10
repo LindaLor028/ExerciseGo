@@ -25,9 +25,6 @@ class ReviewActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        // TODO: Verify if we even need this (not sure if we do LOL)
-//        binding.rating.setOnRatingBarChangeListener { ratingBar, fl, b ->  }
-
         binding.btnSubmit.setOnClickListener {
             if (!binding.etReviewInput.text.isNullOrEmpty()) {
                 val userReview = Review(FirebaseAuth.getInstance().currentUser!!.email!!, parkKey, binding.rating.rating, binding.etReviewInput.text.toString())
