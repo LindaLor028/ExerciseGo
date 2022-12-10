@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/menu_menu_main.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_pressicon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/pressicon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_content_scrolling.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/content_scrolling.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/xml_backup_rules.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_benchicon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/benchicon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_review.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_review.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_maps.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout-w936dp_content_scrolling.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout-w936dp/content_scrolling.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_equipmenticons.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/equipmenticons.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_twistericon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/twistericon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_walkericon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/walkericon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_details.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_details.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_cycleicon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/cycleicon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_park_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/park_row.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout-w1240dp_content_scrolling.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout-w1240dp/content_scrolling.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.macalester.exercisego.app-pngs-30:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_review_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/review_row.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_barsicon.png.flat",
+        "source": "com.macalester.exercisego.app-main-37:/drawable/barsicon.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_login.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_equipments_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/equipments_row.xml"
+    }
+]

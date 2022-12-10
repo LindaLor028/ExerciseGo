@@ -2,32 +2,41 @@ package com.macalester.exercisego
 
 import android.Manifest
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.pm.PackageManager
 import android.location.Location
-import android.location.LocationRequest
+import android.location.LocationListener
+import android.location.LocationManager
 import android.os.Bundle
 import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.content.getSystemService
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.NearbyAdapter
 import com.macalester.exercisego.data.Park
 import com.macalester.exercisego.databinding.ActivityMapsBinding
 
 
-class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
+class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     private lateinit var mMap: GoogleMap
     private lateinit var adapter: NearbyAdapter
     private lateinit var binding: ActivityMapsBinding
+    private lateinit var locationRequest : com.google.android.gms.location.LocationRequest
+    private lateinit var mFusedLocationClient : FusedLocationProviderClient
+    private lateinit var locationManager: LocationManager
 
     private var snapshotListener : ListenerRegistration? = null
 
@@ -45,12 +54,29 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
+        locationManager = getSystemService(android.content.Context.LOCATION_SERVICE) as android.location.LocationManager
+
+       // mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+        shareUserLocation()
+
         binding.btnTest.setOnClickListener {
-            uploadPark()
+//            uploadPark()
+            //shareUserLocation()
         }
         requestNeededPermission()
 
         queryParks()
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+
+        // Add a marker in Sydney and move the camera
+        val budapest = LatLng(47.49, 19.04)
+        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
+
+        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
     }
 
     fun requestNeededPermission() {
@@ -71,16 +97,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
 
-    override fun onMapReady(googleMap: GoogleMap) {
-        mMap = googleMap
+    private fun shareUserLocation() {
 
-        // Add a marker in Sydney and move the camera
-        val budapest = LatLng(47.49, 19.04)
-        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
-
-        mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            return
+        }
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, this)
     }
+
 
     // query db from firebase
     fun queryParks() {
@@ -111,12 +142,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 }
             }
         }
-
         snapshotListener = queryPosts.addSnapshotListener(eventListener)
     }
 
     private fun uploadPark() {
-
         val testPark =
             Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , true, false, true, true, false, true, false)
 
@@ -136,4 +165,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     Toast.LENGTH_SHORT).show()
             }
     }
+
+    override fun onLocationChanged(location: Location) {
+        binding.tvUserLocation.text = """
+            ${location.latitude}, 
+            ${location.longitude}            
+        """.trimIndent()
+    }
+
+
 }
