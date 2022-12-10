@@ -9,6 +9,7 @@ data class Park(
     var address : String = "",
     var latitude: Double = 0.0,
     var longitude: Double = 0.0,
+    var distance : Double = 0.0,
     // you need park coordinates, park reviews (you might need review data type)
     var hasCycle : Boolean = false,
     var hasTwister : Boolean = false,

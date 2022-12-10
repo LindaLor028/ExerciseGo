@@ -28,6 +28,10 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/activity_login.xml"
     },
     {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_maps.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -58,10 +62,6 @@
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_park_row.xml.flat",
-        "source": "com.macalester.exercisego.app-main-37:/layout/park_row.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/menu_menu_main.xml.flat",

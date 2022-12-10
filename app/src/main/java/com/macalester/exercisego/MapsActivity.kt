@@ -1,28 +1,23 @@
 package com.macalester.exercisego
 
 import android.Manifest
-import android.annotation.SuppressLint
-import android.content.Context
 import android.content.pm.PackageManager
+import android.graphics.drawable.ColorDrawable
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
 import android.os.Bundle
-import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.content.getSystemService
 import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.NearbyAdapter
 import com.macalester.exercisego.data.Park
@@ -34,11 +29,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
     private lateinit var mMap: GoogleMap
     private lateinit var adapter: NearbyAdapter
     private lateinit var binding: ActivityMapsBinding
-    private lateinit var locationRequest : com.google.android.gms.location.LocationRequest
-    private lateinit var mFusedLocationClient : FusedLocationProviderClient
     private lateinit var locationManager: LocationManager
 
     private var snapshotListener : ListenerRegistration? = null
+    private var userLocation : LatLng = LatLng(0.0,0.0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,19 +43,19 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         adapter = NearbyAdapter(this)
         binding.rvNearbyParks.adapter = adapter
 
-        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
+//        //Obtain the SupportMapFragment and get notified when the map is ready to be used.
+//        val mapFragment = supportFragmentManager
+//            .findFragmentById(R.id.map) as SupportMapFragment
+//        mapFragment.getMapAsync(this)
 
         locationManager = getSystemService(android.content.Context.LOCATION_SERVICE) as android.location.LocationManager
-
-       // mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         shareUserLocation()
+//        addParkMarkers()
 
         binding.btnTest.setOnClickListener {
-            uploadPark()
+            //uploadPark()
             //shareUserLocation()
+            calculateParkDistance()
         }
         requestNeededPermission()
 
@@ -70,10 +64,21 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+        //mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ))
         // Add a marker in Sydney and move the camera
         val budapest = LatLng(47.49, 19.04)
         mMap.addMarker(MarkerOptions().position(budapest).title("Marker in Budapest"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(budapest))
+
+//        val cameraPosition = CameraPosition.Builder()
+//            .zoom(17f) // Sets the zoom
+//            .bearing(90f) // Sets the orientation of the camera to east
+//            .tilt(30f) // Sets the tilt of the camera to 30 degrees
+//            .build() // Creates a CameraPosition from the builder
+
+//        mMap.setMinZoomPreference(17f)
+        //mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) )
+
     }
 
     fun requestNeededPermission() {
@@ -114,7 +119,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         // point to collections table
         val queryPosts = FirebaseFirestore.getInstance().collection("parks")
         // won't be in consistent order unless you order the items!! Like .orderBy(stuff) ..
-        // You can even create filters :)
 
         val eventListener = object : EventListener<QuerySnapshot> {
             override fun onEvent(querySnapshot: QuerySnapshot?,
@@ -141,19 +145,42 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         snapshotListener = queryPosts.addSnapshotListener(eventListener)
     }
 
-    fun previewPark(parkKey : String) {
-        // firebase call the park by index
-        //  val parkKey = parkKeys[index] <-- we need the parkKey sent to us; not the index!
-        var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
-        firebasePark.get().addOnSuccessListener {
-            val park = it.toObject(Park::class.java)
-            val parkLocation = LatLng(park!!.latitude, park!!.longitude)
-            mMap.addMarker(MarkerOptions().position(parkLocation).title(park.name))
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(parkLocation))
+    private fun addMarker(park : Park) {
+        val parkCoords = LatLng(park.latitude, park.longitude)
+        mMap.addMarker(MarkerOptions().position(parkCoords).title(park.name))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(parkCoords))
+
+    }
+
+    private fun addParkMarkers() {
+        FirebaseFirestore.getInstance().collection("parks").get().addOnSuccessListener {
+            val parks = it.documents
+            for (park in parks) {
+                val parkObj = park.toObject(Park::class.java)
+//                Log.d("testing", parkObj!!.name )
+                addMarker(parkObj!!)
+            }
         }
-        // add a marker on the map
-            // figure out how to remove the marker once the user clicks "out"
-        //
+    }
+
+    private fun calculateParkDistance() {
+        FirebaseFirestore.getInstance().collection("parks").get().addOnSuccessListener {
+            val parks = it.documents
+            val postsCollection = FirebaseFirestore.getInstance().collection("parks")
+            for (park in parks) {
+                val parkObj = park.toObject(Park::class.java)
+
+                val parkLocation = Location("parkLocation")
+                parkLocation.latitude = parkObj!!.latitude
+                parkLocation.longitude = parkObj!!.longitude
+
+                val startLocation = Location("userLocation")
+                startLocation.latitude = userLocation.latitude
+                startLocation.longitude = userLocation.longitude
+
+                postsCollection.document(park.id).update("distance", startLocation.distanceTo(parkLocation))
+            }
+        }
 
     }
 
@@ -162,7 +189,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         val parkLong = 19.0669936
 
         val testPark =
-            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , false, true, true, false, true, false)
+            Park("Hunyadi Tér", 4.5f, "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , 0.0, false, true, true, false, true, false)
 
         val postsCollection = FirebaseFirestore.getInstance()
             .collection("parks")
@@ -186,6 +213,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
             ${location.latitude}, 
             ${location.longitude}            
         """.trimIndent()
+
+        userLocation = LatLng(location.latitude, location.longitude)
     }
 
 

@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/park_row.xml",
-        "source": "com.macalester.exercisego.app-main-37:/layout/park_row.xml"
-    },
-    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-34:/layout/park_row.xml",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/park_row.xml"
     },
@@ -18,6 +14,10 @@
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_review.xml",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/activity_review.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_maps.xml",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-34:/layout/activity_details.xml",
