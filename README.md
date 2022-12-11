@@ -17,7 +17,8 @@ Thank you for checkin' out my app, and we hope you enjoy exercise parks as much 
 
 <img src="Thanks.png" alt="alt text" width="400">
 
-Linda 
+
+
 
 
 **Game Development Notes** 
