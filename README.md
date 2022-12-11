@@ -2,7 +2,7 @@
 
 After a semester long of Mobile Software Development instructed by Péter Ekler, I am proud to announce my final project..
 
-                                                **Exercise Go!**
+                                                Exercise Go!
                                                 
 This app was developed in Android Studio and models what a basic Maps project would be (except that we specialize in exercise parks).
 
@@ -19,6 +19,7 @@ Linda
 
 
 **Game Development Notes** 
+
 For individuals interested in developing a similar app, please read all information below. 
 
 FIREBASE: This app relies on a Cloud Firestore that I have linked with my Gmail account. I recommend that you create your own Cloud Firestore if you'd like to store cloud information. 
