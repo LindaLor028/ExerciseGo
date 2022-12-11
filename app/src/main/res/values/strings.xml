@@ -30,4 +30,5 @@
     <string name="cycles">Cycles</string>
     <string name="benches">Benches</string>
     <string name="bars">Bars</string>
+    <string name="park_details">Park Details</string>
 </resources>

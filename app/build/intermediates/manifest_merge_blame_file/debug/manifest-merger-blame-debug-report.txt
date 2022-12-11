@@ -42,7 +42,7 @@
 26    </queries>
 27
 28    <application
-28-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-49:19
+28-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-48:19
 29        android:allowBackup="true"
 29-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:11:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,213 +64,215 @@
 39        android:theme="@style/Theme.ExerciseGo" >
 39-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:18:9-48
 40        <activity
-40-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:20:9-24:20
+40-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:20:9-30:20
 41            android:name="com.macalester.exercisego.LoginActivity"
 41-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:13-42
-42            android:exported="true" >
+42            android:exported="true"
 42-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:22:13-36
-43        </activity>
-44        <activity
-44-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:9-29:40
-45            android:name="com.macalester.exercisego.ReviewActivity"
-45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:28:13-43
-46            android:exported="false" />
-46-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:13-37
-47        <activity
-47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:30:9-33:44
-48            android:name="com.macalester.exercisego.DetailsActivity"
-48-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:31:13-44
-49            android:exported="false"
-49-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:13-37
-50            android:label="Park Details" />
-50-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-41
-51
-52        <meta-data
-52-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-37:71
-53            android:name="com.google.android.geo.API_KEY"
-53-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-58
-54            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" /> <!-- API KEY -->
-54-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-68
-55        <activity
-55-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:9-48:20
-56            android:name="com.macalester.exercisego.MapsActivity"
-56-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-41
-57            android:exported="true"
-57-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:13-36
-58            android:label="@string/app_name" >
-58-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-45
-59            <intent-filter>
-59-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-46:29
-60                <action android:name="android.intent.action.MAIN" />
-60-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:17-69
-60-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:25-66
-61
-62                <category android:name="android.intent.category.LAUNCHER" />
-62-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:17-77
-62-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:27-74
-63            </intent-filter>
-64        </activity>
-65
-66        <service
-66-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
-67            android:name="com.google.firebase.components.ComponentDiscoveryService"
-67-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:12:13-84
-68            android:directBootAware="true"
-68-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:34:13-43
-69            android:exported="false" >
-69-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:13:13-37
-70            <meta-data
-70-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:14:13-16:85
-71                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
-71-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:15:17-126
-72                android:value="com.google.firebase.components.ComponentRegistrar" />
-72-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:16:17-82
-73            <meta-data
-73-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:14:13-16:85
-74                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-74-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:15:17-113
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:16:17-82
-76            <meta-data
-76-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
-77                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-77-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
-79            <meta-data
-79-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
-80                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-80-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:20:17-111
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:21:17-82
-82        </service> <!-- Needs to be explicitly declared on P+ -->
-83        <uses-library
-83-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
-84            android:name="org.apache.http.legacy"
-84-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
-85            android:required="false" />
-85-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
-86
-87        <activity
-87-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
-88            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-88-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
-89            android:excludeFromRecents="true"
-89-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
-90            android:exported="true"
-90-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
-91            android:launchMode="singleTask"
-91-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
-92            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-92-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
-93            <intent-filter>
-93-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
-94                <action android:name="android.intent.action.VIEW" />
-94-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-94-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-95
-96                <category android:name="android.intent.category.DEFAULT" />
-96-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-96-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-97                <category android:name="android.intent.category.BROWSABLE" />
-97-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-97-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-98
-99                <data
-99-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-100                    android:host="firebase.auth"
-100-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-101                    android:path="/"
-101-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-102                    android:scheme="genericidp" />
-102-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-103            </intent-filter>
-104        </activity>
-105        <activity
-105-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
-106            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-106-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
-107            android:excludeFromRecents="true"
-107-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
-108            android:exported="true"
-108-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
-109            android:launchMode="singleTask"
-109-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
-110            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-110-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
-111            <intent-filter>
-111-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
-112                <action android:name="android.intent.action.VIEW" />
-112-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
-112-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
-113
-114                <category android:name="android.intent.category.DEFAULT" />
-114-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
-114-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
-115                <category android:name="android.intent.category.BROWSABLE" />
-115-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
-115-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
-116
-117                <data
-117-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
-118                    android:host="firebase.auth"
-118-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
-119                    android:path="/"
-119-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
-120                    android:scheme="recaptcha" />
-120-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
-121            </intent-filter>
-122        </activity>
-123        <activity
-123-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-124            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-124-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-126            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-126-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-127
-128        <provider
-128-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
-129            android:name="com.google.firebase.provider.FirebaseInitProvider"
-129-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
-130            android:authorities="com.macalester.exercisego.firebaseinitprovider"
-130-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
-131            android:directBootAware="true"
-131-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
-132            android:exported="false"
-132-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
-133            android:initOrder="100" />
-133-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
-134
-135        <meta-data
-135-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
-136            android:name="com.google.android.gms.version"
-136-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
-137            android:value="@integer/google_play_services_version" />
-137-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
-138
-139        <provider
-139-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-140            android:name="androidx.startup.InitializationProvider"
-140-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-141            android:authorities="com.macalester.exercisego.androidx-startup"
-141-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-142            android:exported="false" >
-142-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-143            <meta-data
-143-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-144                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-144-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-145                android:value="androidx.startup" />
-145-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-146            <meta-data
-146-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-147                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-147-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-148                android:value="androidx.startup" />
-148-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-149        </provider>
-150    </application>
-151
-152</manifest>
+43            android:theme="@style/Theme.Design.NoActionBar" >
+43-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:23:13-60
+44            <intent-filter>
+44-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:25:13-28:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:17-69
+45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:17-77
+47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:9-34:40
+51            android:name="com.macalester.exercisego.ReviewActivity"
+51-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-43
+52            android:exported="false" />
+52-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:34:13-37
+53        <activity
+53-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-38:52
+54            android:name="com.macalester.exercisego.DetailsActivity"
+54-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-44
+55            android:exported="false"
+55-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-37
+56            android:label="@string/park_details" />
+56-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:13-49
+57
+58        <meta-data
+58-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:9-42:71
+59            android:name="com.google.android.geo.API_KEY"
+59-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-58
+60            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" /> <!-- API KEY -->
+60-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:42:13-68
+61        <activity
+61-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:9-47:20
+62            android:name="com.macalester.exercisego.MapsActivity"
+62-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:13-41
+63            android:exported="true"
+63-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:13-36
+64            android:label="@string/app_name" >
+64-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:13-45
+65        </activity>
+66
+67        <service
+67-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:12:13-84
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:13:13-37
+71            <meta-data
+71-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:14:13-16:85
+72                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+72-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:15:17-126
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:16:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:14:13-16:85
+75                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+75-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:15:17-113
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:16:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+78                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+78-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
+81                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+81-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:20:17-111
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:21:17-82
+83        </service> <!-- Needs to be explicitly declared on P+ -->
+84        <uses-library
+84-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+85            android:name="org.apache.http.legacy"
+85-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+86            android:required="false" />
+86-->[com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+87
+88        <activity
+88-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+89            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+89-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+90            android:excludeFromRecents="true"
+90-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+91            android:exported="true"
+91-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+92            android:launchMode="singleTask"
+92-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+93-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+94            <intent-filter>
+94-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+95-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+97-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+98-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+99
+100                <data
+100-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+101                    android:host="firebase.auth"
+101-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+102                    android:path="/"
+102-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+103                    android:scheme="genericidp" />
+103-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+104            </intent-filter>
+105        </activity>
+106        <activity
+106-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+107            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+107-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+108            android:excludeFromRecents="true"
+108-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+109            android:exported="true"
+109-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+110            android:launchMode="singleTask"
+110-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+111-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+112            <intent-filter>
+112-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+113                <action android:name="android.intent.action.VIEW" />
+113-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:17-69
+113-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:34:25-66
+114
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:17-76
+115-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:36:27-73
+116                <category android:name="android.intent.category.BROWSABLE" />
+116-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:17-78
+116-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:37:27-75
+117
+118                <data
+118-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:39:17-42:51
+119                    android:host="firebase.auth"
+119-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:40:21-49
+120                    android:path="/"
+120-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:41:21-37
+121                    android:scheme="recaptcha" />
+121-->[com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:42:21-48
+122            </intent-filter>
+123        </activity>
+124        <activity
+124-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+125            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+125-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+126            android:exported="false"
+126-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+127            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+127-->[com.google.android.gms:play-services-base:18.0.1] /Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+128
+129        <provider
+129-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+130            android:name="com.google.firebase.provider.FirebaseInitProvider"
+130-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+131            android:authorities="com.macalester.exercisego.firebaseinitprovider"
+131-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+132            android:directBootAware="true"
+132-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+133            android:exported="false"
+133-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+134            android:initOrder="100" />
+134-->[com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+135
+136        <meta-data
+136-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+137            android:name="com.google.android.gms.version"
+137-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+138            android:value="@integer/google_play_services_version" />
+138-->[com.google.android.gms:play-services-basement:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/1a3078af006f2d81eb7a28e9ac1dcdad/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+139
+140        <provider
+140-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+141            android:name="androidx.startup.InitializationProvider"
+141-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+142            android:authorities="com.macalester.exercisego.androidx-startup"
+142-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+143            android:exported="false" >
+143-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+144            <meta-data
+144-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+145-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+146                android:value="androidx.startup" />
+146-->[androidx.emoji2:emoji2:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/8921f49908079e2a6c3962527f5f06f7/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+147            <meta-data
+147-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+148                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+148-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+149                android:value="androidx.startup" />
+149-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+150        </provider>
+151    </application>
+152
+153</manifest>

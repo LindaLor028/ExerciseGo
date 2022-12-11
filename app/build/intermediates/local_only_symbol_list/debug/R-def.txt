@@ -99,6 +99,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string leave_a_review
 string login
+string park_details
 string park_name
 string parks_near_you
 string password

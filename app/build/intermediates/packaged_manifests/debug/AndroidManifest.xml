@@ -39,7 +39,13 @@
         android:theme="@style/Theme.ExerciseGo" >
         <activity
             android:name="com.macalester.exercisego.LoginActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.macalester.exercisego.ReviewActivity"
@@ -47,7 +53,7 @@
         <activity
             android:name="com.macalester.exercisego.DetailsActivity"
             android:exported="false"
-            android:label="Park Details" />
+            android:label="@string/park_details" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -56,11 +62,6 @@
             android:name="com.macalester.exercisego.MapsActivity"
             android:exported="true"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <service

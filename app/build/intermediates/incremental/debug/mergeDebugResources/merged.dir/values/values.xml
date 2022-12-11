@@ -1858,6 +1858,7 @@
     <string name="mtrl_switch_track_path" translatable="false">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string description="Button text to indicate that the widget will ignore the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_cancel">Cancel</string>
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
+    <string name="park_details">Park Details</string>
     <string name="park_name">Park Name</string>
     <string name="parks_near_you">Parks Near You</string>
     <string name="password">Password</string>
@@ -5924,7 +5925,7 @@
   </style>
     <style name="Theme.ExerciseGo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/grey_800</item>
         <item name="colorPrimaryVariant">@color/orange_900</item>
         <item name="colorOnPrimary">@color/grey_800</item>
 
@@ -5936,10 +5937,9 @@
         <item name="android:statusBarColor" ns1:targetApi="l">@color/black</item>
         <item name="android:actionBarStyle">@style/Style.Action</item>
         
-        <item name="android:background">@color/grey_800</item>
     </style>
     <style name="Theme.ExerciseGo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="Theme.ExerciseGo.NoActionBar">
+    <style name="Theme.ExerciseGo.NoActionBar" parent="ThemeOverlay.AppCompat.Light">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
