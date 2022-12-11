@@ -102,6 +102,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     /**
      * Requests location permissions and then calls a requestLocationUpdate for the locationManager.
+     * Based on code from JavaPapers: https://javapapers.com/android/get-current-location-in-android/
      */
     private fun shareUserLocation() {
         if (!pause)  {
