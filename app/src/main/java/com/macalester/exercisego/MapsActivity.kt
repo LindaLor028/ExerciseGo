@@ -28,9 +28,9 @@ import com.macalester.exercisego.databinding.ActivityMapsBinding
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     companion object {
-        val PARKS_COLLECTION = "parks"
-        val REVIEWS_COLLECTION = "reviews"
-        val PARK_ID = "parkID"
+        const val PARKS_COLLECTION = "parks"
+        const val REVIEWS_COLLECTION = "reviews"
+        const val PARK_ID = "parkID"
     }
 
     private lateinit var mMap: GoogleMap
@@ -40,12 +40,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     private var snapshotListener : ListenerRegistration? = null
     private var userLocation : LatLng = LatLng(0.0,0.0)
+    private var pause = false
+    private var locationPermission = false
 
     /**
      * Creates MapsActivity and updates UI as needed and
      * reads button-clicks.
-     *
-     * TODO: Override onResume and onStop in respect to location monitoring
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,9 +68,18 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
             uploadPark()
             calculateParkDistance()
         }
-        requestNeededPermission()
 
         queryParks()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        pause = false
+    }
+
+    override fun onStop() {
+        super.onStop()
+        pause = true
     }
 
     /**
@@ -92,41 +101,25 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
     }
 
     /**
-     * Requests location permissions.
-     */
-    private fun requestNeededPermission() {
-        if (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                101
-            )
-        } else {
-        }
-    }
-
-
-    /**
      * Requests location permissions and then calls a requestLocationUpdate for the locationManager.
      */
     private fun shareUserLocation() {
-        if (ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_COARSE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            return
+        if (!pause)  {
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                return
+            } else {
+                locationPermission = true
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, this)
+            }
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, this)
     }
-
 
     /**
      * Queries the parks from the Firebase Cloud and presents them in order of distance.
@@ -171,11 +164,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     /**
      * Adds marker for first three parks.
-     * TODO: Get first three parks, make sure this matches with top 3 !
+     * TODO: Update this when you have enough parks LMAO
      */
     private fun addParkMarkers() {
         FirebaseFirestore.getInstance().collection(PARKS_COLLECTION).get().addOnSuccessListener {
             val parks = it.documents
+//            parks.subList(0,3)
             for (park in parks) {
                 val parkObj = park.toObject(Park::class.java)
                 addMarker(parkObj!!)
@@ -205,7 +199,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
                 postsCollection.document(park.id).update("distance", startLocation.distanceTo(parkLocation))
             }
         }
-
     }
 
     /**

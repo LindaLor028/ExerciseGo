@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
             ).addOnSuccessListener {
                 Toast.makeText(
                     this,
-                    "Registration OK",
+                    getString(R.string.registration_confirm),
                     Toast.LENGTH_LONG
                 ).show()
             }.addOnFailureListener{
@@ -77,11 +77,11 @@ class LoginActivity : AppCompatActivity() {
     fun isFormValid(): Boolean {
         return when {
             binding.etEmail.text.isEmpty() -> {
-                binding.etEmail.error = "This field can not be empty"
+                binding.etEmail.error = getString(R.string.cannot_be_empty)
                 false
             }
             binding.etPassword.text.isEmpty() -> {
-                binding.etPassword.error = "The password can not be empty"
+                binding.etPassword.error = getString(R.string.cannot_be_empty)
                 false
             }
             else -> true

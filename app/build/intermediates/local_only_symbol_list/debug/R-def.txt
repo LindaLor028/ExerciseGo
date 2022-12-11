@@ -89,6 +89,7 @@ string app_name
 string at_a_glance
 string bars
 string benches
+string cannot_be_empty
 string cycles
 string default_web_client_id
 string email
@@ -106,7 +107,9 @@ string password
 string presses
 string project_id
 string register
+string registration_confirm
 string review_hint
+string review_saved
 string reviews
 string submit
 string title_activity_maps

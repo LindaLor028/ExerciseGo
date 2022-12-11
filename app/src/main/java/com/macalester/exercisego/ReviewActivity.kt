@@ -64,7 +64,7 @@ class ReviewActivity : AppCompatActivity() {
         reviewCollection.add(review)
             .addOnSuccessListener {
                 Toast.makeText(this,
-                    "Review saved", Toast.LENGTH_SHORT).show()
+                    getString(R.string.review_saved), Toast.LENGTH_SHORT).show()
                 finish()
             }
             .addOnFailureListener{

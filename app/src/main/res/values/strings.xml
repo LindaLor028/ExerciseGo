@@ -31,4 +31,7 @@
     <string name="benches">Benches</string>
     <string name="bars">Bars</string>
     <string name="park_details">Park Details</string>
+    <string name="cannot_be_empty">This field can not be empty</string>
+    <string name="registration_confirm">Registration OK</string>
+    <string name="review_saved">Review saved</string>
 </resources>

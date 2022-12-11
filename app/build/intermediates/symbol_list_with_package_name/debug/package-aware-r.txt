@@ -3514,6 +3514,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string cannot_be_empty
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3657,7 +3658,9 @@ string path_password_strike_through
 string presses
 string project_id
 string register
+string registration_confirm
 string review_hint
+string review_saved
 string reviews
 string search_menu_title
 string status_bar_notification_info_overflow

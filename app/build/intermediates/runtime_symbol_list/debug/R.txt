@@ -3513,6 +3513,7 @@ int string bottomsheet_action_expand 0x7f110025
 int string bottomsheet_action_expand_halfway 0x7f110026
 int string bottomsheet_drag_handle_clicked 0x7f110027
 int string bottomsheet_drag_handle_content_description 0x7f110028
+int string cannot_be_empty 0x7f1100c0
 int string character_counter_content_description 0x7f110029
 int string character_counter_overflowed_content_description 0x7f11002a
 int string character_counter_pattern 0x7f11002b
@@ -3656,7 +3657,9 @@ int string path_password_strike_through 0x7f1100b3
 int string presses 0x7f1100b4
 int string project_id 0x7f1100b5
 int string register 0x7f1100b6
+int string registration_confirm 0x7f1100c1
 int string review_hint 0x7f1100b7
+int string review_saved 0x7f1100c2
 int string reviews 0x7f1100b8
 int string search_menu_title 0x7f1100b9
 int string status_bar_notification_info_overflow 0x7f1100ba

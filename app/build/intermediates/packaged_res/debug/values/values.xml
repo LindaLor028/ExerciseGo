@@ -16,6 +16,7 @@
     <string name="at_a_glance">At A Glance:</string>
     <string name="bars">Bars</string>
     <string name="benches">Benches</string>
+    <string name="cannot_be_empty">This field can not be empty</string>
     <string name="cycles">Cycles</string>
     <string name="default_web_client_id" translatable="false">518501153950-90tkakj1auqlgt673ld0jjfh8vkgeqgl.apps.googleusercontent.com</string>
     <string name="email">email</string>
@@ -33,7 +34,9 @@
     <string name="presses">Presses</string>
     <string name="project_id" translatable="false">aitexercisego2022</string>
     <string name="register">Register</string>
+    <string name="registration_confirm">Registration OK</string>
     <string name="review_hint">Share your experience...</string>
+    <string name="review_saved">Review saved</string>
     <string name="reviews">Reviews:</string>
     <string name="submit">Submit</string>
     <string name="title_activity_maps">MapsActivity</string>
