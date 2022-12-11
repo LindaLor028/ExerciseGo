@@ -15,6 +15,8 @@ As this app was developed in Budapest, Hungary, it only contains information reg
 
 Thank you for checkin' out my app, and we hope you enjoy exercise parks as much as we do! 
 
+![Thanks](Thanks.png)
+
 Linda 
 
 
