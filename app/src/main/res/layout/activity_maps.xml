@@ -23,22 +23,12 @@
         />
 
     <TextView
-        android:id="@+id/tvUserLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="User Location"
-        android:textSize="14sp"
-        android:visibility="gone"/>
-
-    <TextView
         android:id="@+id/tvParksTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="Parks Near You"
+        android:text="@string/parks_near_you"
         android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView

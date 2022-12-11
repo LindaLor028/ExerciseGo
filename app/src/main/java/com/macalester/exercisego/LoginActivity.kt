@@ -7,6 +7,10 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.macalester.exercisego.databinding.ActivityLoginBinding
 
+/**
+ * Code written by Péter Ekler during his Firebase Authentication Demo for his
+ * Mobile Software Development course of Fall 2022.
+ */
 class LoginActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityLoginBinding

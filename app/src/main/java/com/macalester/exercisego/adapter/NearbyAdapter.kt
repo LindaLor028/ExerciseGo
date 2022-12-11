@@ -6,78 +6,91 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.firestore.FirebaseFirestore
 import com.macalester.exercisego.DetailsActivity
 import com.macalester.exercisego.MapsActivity
 import com.macalester.exercisego.data.Park
-import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ParkRowBinding
 
+/**
+ * Code adapted from Péter Ekler 's To do Recycler Demo.
+ */
 class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
 
-    // store list for post Objs
     var  parksList = mutableListOf<Park>()
-    // store list for Post IDS (this is bc Firebase store post ids a lil diff)
-    var  parkKeys = mutableListOf<String>()
-
+    var  parkIDs = mutableListOf<String>()
     val context: Context
 
-
+    /**
+     * ReviewAdapter constructor which takes in context.
+     */
     constructor(context: Context) {
         this.context = context
     }
 
-    override fun getItemCount(): Int {
-        return parksList.size
-    }
-
+    /**
+     * Method for starting the DetailsActivity.
+     * It ensures that the proper park ID is passed through intentDetails.
+     */
     private fun startDetailsActivity (index : Int) {
         val intentDetails = Intent()
         intentDetails.setClass(context, DetailsActivity::class.java)
 
-        val parkKey = parkKeys[index]
-        intentDetails.putExtra("parkID", parkKey)
+        val parkKey = parkIDs[index]
+        intentDetails.putExtra(MapsActivity.PARK_ID, parkKey)
         ContextCompat.startActivity(context, intentDetails, null)
     }
 
+    /**
+     * Creates the inner ViewHolder class and binds it to the context.
+     */
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val parkRowBinding = ParkRowBinding.inflate(LayoutInflater.from(context))
         return ViewHolder(parkRowBinding)
     }
 
+    /**
+     * Method ensures proper binding on the inner ViewHolder class in respect to the
+     * park details it hold.
+     */
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentPark = parksList[holder.adapterPosition]
         holder.bind(currentPark)
     }
 
+    /**
+     * Returns overall amount of parks in Firebase Cloud
+     */
+    override fun getItemCount(): Int {
+        return parksList.size
+    }
+
+    /**
+     * Adds the park by key and updates
+     * parksList and parkIDs accordingly.
+     */
     fun addPark(park: Park, key: String) {
         parksList.add(park)
-        parkKeys.add(key)
+        parkIDs.add(key)
         notifyItemInserted(parksList.lastIndex)
     }
 
-    private fun removePark(index: Int) {
-        FirebaseFirestore.getInstance().collection(
-            "parks").document(
-            parkKeys[index]
-        ).delete()
-
-        parksList.removeAt(index)
-        parkKeys.removeAt(index)
-        notifyItemRemoved(index)
-    }
-
-    // when somebody else removes an object
+    /**
+     * Removes the park by key and updates
+     * parksList and parkIDs accordingly.
+     */
     fun removeParkByKey(key: String) {
-        val index = parkKeys.indexOf(key)
+        val index = parkIDs.indexOf(key)
         if (index != -1) {
             parksList.removeAt(index)
-            parkKeys.removeAt(index)
+            parkIDs.removeAt(index)
             notifyItemRemoved(index)
         }
     }
 
-    // represents one line and is copied for every other item !
+    /**
+     * An inner class that represents a singular row for a park.
+     * It manages binding and updating the UI based on the park details.
+     */
     inner class ViewHolder(private val parkRowBinding: ParkRowBinding) :
         RecyclerView.ViewHolder(parkRowBinding.root)
     {

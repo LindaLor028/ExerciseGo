@@ -30,17 +30,12 @@ public final class ActivityMapsBinding implements ViewBinding {
   @NonNull
   public final TextView tvParksTitle;
 
-  @NonNull
-  public final TextView tvUserLocation;
-
   private ActivityMapsBinding(@NonNull LinearLayout rootView, @NonNull Button btnTest,
-      @NonNull RecyclerView rvNearbyParks, @NonNull TextView tvParksTitle,
-      @NonNull TextView tvUserLocation) {
+      @NonNull RecyclerView rvNearbyParks, @NonNull TextView tvParksTitle) {
     this.rootView = rootView;
     this.btnTest = btnTest;
     this.rvNearbyParks = rvNearbyParks;
     this.tvParksTitle = tvParksTitle;
-    this.tvUserLocation = tvUserLocation;
   }
 
   @Override
@@ -88,14 +83,7 @@ public final class ActivityMapsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tvUserLocation;
-      TextView tvUserLocation = ViewBindings.findChildViewById(rootView, id);
-      if (tvUserLocation == null) {
-        break missingId;
-      }
-
-      return new ActivityMapsBinding((LinearLayout) rootView, btnTest, rvNearbyParks, tvParksTitle,
-          tvUserLocation);
+      return new ActivityMapsBinding((LinearLayout) rootView, btnTest, rvNearbyParks, tvParksTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -16,20 +16,28 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/twistericon.png"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_review.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_review.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/layout_activity_login.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_maps.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -64,8 +72,16 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_details.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_details.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/drawable_exercisego.png.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/exercisego.png"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_park_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/park_row.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/menu_menu_main.xml.flat",
@@ -104,10 +120,6 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.macalester.exercisego.app-merged_res-35:/drawable_exercisego.png.flat",
-        "source": "com.macalester.exercisego.app-main-37:/drawable/exercisego.png"
-    },
-    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/drawable_benchicon.png.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/benchicon.png"
     },
@@ -124,6 +136,10 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/content_scrolling.xml"
     },
     {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_activity_login.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/activity_login.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/layout_activity_maps.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout/activity_maps.xml"
     },
@@ -136,12 +152,12 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout-w936dp/content_scrolling.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/drawable_walkericon.png.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/walkericon.png"
-    },
-    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/drawable_walkericon.png.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/drawable/walkericon.png"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -150,5 +166,9 @@
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.macalester.exercisego.app-merged_res-35:/layout_equipments_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-37:/layout/equipments_row.xml"
     }
 ]

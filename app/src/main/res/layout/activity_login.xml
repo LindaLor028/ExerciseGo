@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
                 android:text="john@doe.hu"
-                android:hint="email" />
+                android:hint="@string/email" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:text="123456"
-                android:hint="Password"/>
+                android:hint="@string/password"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -58,7 +58,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="12dp"
             android:padding="12dp"
-            android:text="Login"
+            android:text="@string/login"
             android:theme="@style/Style.Button"/>
 
         <Button
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Register"
+            android:text="@string/register"
             android:theme="@style/Style.Button"/>
 
     </LinearLayout>

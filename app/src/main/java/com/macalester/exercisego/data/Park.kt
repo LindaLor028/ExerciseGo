@@ -1,15 +1,17 @@
 package com.macalester.exercisego.data
 
-import android.location.Location
-import com.google.android.gms.maps.model.LatLng
-
+/**
+ * Park data class.
+ * Contains appropriate information that defines a park in this app.
+ */
 data class Park(
     var name : String = "",
     var address : String = "",
     var latitude: Double = 0.0,
     var longitude: Double = 0.0,
     var distance : Double = 0.0,
-    // you need park coordinates, park reviews (you might need review data type)
+
+    // exercise equipment details
     var hasCycle : Boolean = false,
     var hasTwister : Boolean = false,
     var hasPress : Boolean = false,

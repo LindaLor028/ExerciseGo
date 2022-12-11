@@ -3,7 +3,6 @@ package com.macalester.exercisego
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
@@ -14,42 +13,58 @@ import com.macalester.exercisego.data.Park
 import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ActivityDetailsBinding
 
+/**
+ * Code written by Linda Lor (LindaLor028 on GitHub).
+ */
 class DetailsActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityDetailsBinding
     lateinit var adapter : ReviewAdapter
     private var snapshotListener : ListenerRegistration? = null
+    private var parkID = ""
 
+    /**
+     * Creates DetailsActivity and updates UI as needed.
+     * Also reads when buttons are clicked and sends appropriate response.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        setTitle("Park Details")
 
-        var parkKey = intent.getStringExtra("parkID")!!
-        var firebasePark = FirebaseFirestore.getInstance().collection("parks").document(parkKey)
+        parkID = intent.getStringExtra(MapsActivity.PARK_ID)!!
+        var firebasePark = FirebaseFirestore.getInstance().collection(MapsActivity.PARKS_COLLECTION).document(parkID)
         firebasePark.get().addOnSuccessListener {
             val park = it.toObject(Park::class.java)
-
-            binding.tvParkName.text = park!!.name
-            binding.tvAddress.text = park!!.address
-
-            binding.btnReview.setOnClickListener {
-                // you can probably implement the firebase/ait-forum demo thing :))
-                startReviewActivity(parkKey) }
-
-            queryReviews(parkKey)
-            setUpEquipmentRow(park)
             adapter = ReviewAdapter(this)
             binding.rvReviews.adapter = adapter
             setContentView(binding.root)
+
+            queryReviews()
+            setUpParkDetails(park!!)
+
+            binding.btnReview.setOnClickListener {
+                startReviewActivity()
+            }
         }
     }
 
-    //TODO: Check if we can make this less redundant?
+    /**
+     * Overall method that sets up all park details.
+     */
+    private fun setUpParkDetails(park : Park) {
+        binding.tvParkName.text = park!!.name
+        binding.tvAddress.text = park!!.address
+
+        setUpEquipmentRow(park)
+    }
+
+    /**
+     * Goes through park exercise equipment attributes and sets the visibility of
+     * each equipment as needed.
+     */
     private fun setUpEquipmentRow(park: Park) {
-        // go through its park attributes and set visibility as needed
         if (park.hasBar) {
             binding.equipmentsRow.imgBars.visibility = View.VISIBLE
             binding.equipmentsRow.tvBars.visibility = View.VISIBLE
@@ -80,13 +95,22 @@ class DetailsActivity : AppCompatActivity() {
         }
     }
 
-    private fun startReviewActivity (parkID : String) {
+    /**
+     * Starts ReviewActivity and sends appropriate information concerning
+     * the parkID through intentDetails.
+     */
+    private fun startReviewActivity () {
         val intentDetails = Intent()
         intentDetails.setClass(this, ReviewActivity::class.java)
-        intentDetails.putExtra("parkID", parkID) // TODO: Fix This !
+        intentDetails.putExtra(MapsActivity.PARK_ID, parkID)
         ContextCompat.startActivity(this, intentDetails, null)
     }
 
+    /**
+     * Adds a back button to the Action Bar and finishes the activity when clicked.
+     * Code provided by user, arjun shrestha, on stackoverflow.
+     * https://stackoverflow.com/questions/47250263/kotlin-convert-timestamp-to-datetime
+     */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.getItemId()) {
             android.R.id.home -> {
@@ -97,10 +121,11 @@ class DetailsActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    fun queryReviews(parkKey : String) {
-        // point to collections table
-        //TODO: Get reviews specific to parkID
-        val queryReviews = FirebaseFirestore.getInstance().collection("reviews")
+    /**
+     * Queries the reviews from the Firebase Cloud.
+     */
+    fun queryReviews() {
+        val queryReviews = FirebaseFirestore.getInstance().collection(MapsActivity.REVIEWS_COLLECTION)
 
         val eventListener = object : EventListener<QuerySnapshot> {
             override fun onEvent(querySnapshot: QuerySnapshot?,
@@ -116,7 +141,7 @@ class DetailsActivity : AppCompatActivity() {
                 for (docChange in querySnapshot?.getDocumentChanges()!!) {
                     if (docChange.type == DocumentChange.Type.ADDED) {
                         val review = docChange.document.toObject(Review::class.java)
-                        if (review.parkid == parkKey) {
+                        if (review.parkid == parkID) {
                             adapter.addReview(review, docChange.document.id)
                         }
                     } else if (docChange.type == DocumentChange.Type.REMOVED) {

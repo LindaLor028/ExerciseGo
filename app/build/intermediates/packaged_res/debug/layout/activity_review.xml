@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Leave a Review "
+        android:text="@string/leave_a_review"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Share your experience... "
+        android:hint="@string/review_hint"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toStartOf="@+id/rating"
         app:layout_constraintTop_toBottomOf="@+id/rating" />
@@ -33,7 +33,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Submit"
+        android:theme="@style/Style.Button"
+        android:text="@string/submit"
         app:layout_constraintEnd_toEndOf="@+id/etReviewInput"
         app:layout_constraintTop_toBottomOf="@+id/etReviewInput" />
 
