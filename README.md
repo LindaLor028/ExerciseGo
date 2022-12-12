@@ -32,19 +32,19 @@ GOOGLE MAPS: This app relies on a Google Maps API Key that I have linked with my
 IMAGES: All images are created by Linda Lor (me). Icons were created using Google Slides. You are free to use these images as needed- just credit my work!
 
 CODE: A vast majority of the code is written by Linda Lor (me), but there are chunks of code that are also provided by others. It is noted in each individual file, but I would like to credit them here as well for their knowledge. 
-*Péter Ekler : LoginActivity, Adapter Classes 
-*Arjun Shrestha : Back Button code in ReviewActivity and DetailsActivity
-*JavaPaper.com (Joe) : Current Location code in MapsActivity
-*Gaurang Goda : DetailsActivity, Decimal formatting code
+* Péter Ekler : LoginActivity, Adapter Classes 
+* Arjun Shrestha : Back Button code in ReviewActivity and DetailsActivity
+* JavaPaper.com (Joe) : Current Location code in MapsActivity
+* Gaurang Goda : DetailsActivity, Decimal formatting code
 
 #### Future Improvements ####
 
 I hope this app can inspire others to create something similar and even better! Here are some future improvements to consider if you'd like to extend this app : 
-*Making Google Maps implementation a lot more intentional with markers and onMapClick Listeners. 
-*A Favorite Parks activity that lists user's favorite parks
-*Using Google Fit's API and making the app even more "exercise" friendly 
-*Adding images to user reviews 
-*Calculating the average of all reviews 
+* Making Google Maps implementation a lot more intentional with markers and onMapClick Listeners. 
+* A Favorite Parks activity that lists user's favorite parks
+* Using Google Fit's API and making the app even more "exercise" friendly 
+* Adding images to user reviews 
+* Calculating the average of all reviews 
 
 
 
