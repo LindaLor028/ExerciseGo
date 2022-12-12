@@ -127,7 +127,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
     /**
      * Queries the parks from the Firebase Cloud and presents them in order of distance.
      */
-    fun queryParks() {
+    private fun queryParks() {
         val queryPosts = FirebaseFirestore.getInstance().collection(PARKS_COLLECTION).orderBy("distance")
 
         val eventListener = object : EventListener<QuerySnapshot> {
@@ -211,7 +211,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
     }
 
     /**
-     * When app is closed, remove snapshopListener to prevent background reading.
+     * When app is closed, remove snapshotListener to prevent background reading.
      */
     override fun onDestroy() {
         super.onDestroy()
