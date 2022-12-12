@@ -32,7 +32,6 @@ id btnLogin
 id btnRegister
 id btnReview
 id btnSubmit
-id btnTest
 id divider
 id equipmentsRow
 id etEmail
@@ -54,11 +53,13 @@ id imgCycle
 id imgPress
 id imgTwist
 id imgWalker
+id iv
 id iv1
 id iv2
 id iv3
 id iv4
 id llEquipment
+id map
 id rating
 id rvNearbyParks
 id rvReviews
@@ -86,6 +87,7 @@ layout activity_maps
 layout activity_review
 layout content_scrolling
 layout equipments_row
+layout image_dialog
 layout image_row
 layout park_row
 layout review_row

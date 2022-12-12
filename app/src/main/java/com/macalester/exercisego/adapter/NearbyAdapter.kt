@@ -108,7 +108,7 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
             df.roundingMode = RoundingMode.CEILING
             var distance =  df.format(park.distance)
 
-            parkRowBinding.tvRowDistance.text = "${distance} m"
+            parkRowBinding.tvRowDistance.text = "${distance} km"
 
             Glide.with(context).load(park.imgURL_3).into (
                 parkRowBinding.imageView

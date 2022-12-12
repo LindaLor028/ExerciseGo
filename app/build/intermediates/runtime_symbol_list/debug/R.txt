@@ -2835,7 +2835,6 @@ int id btnLogin 0x7f08006b
 int id btnRegister 0x7f08006c
 int id btnReview 0x7f08006d
 int id btnSubmit 0x7f08006e
-int id btnTest 0x7f08006f
 int id buttonPanel 0x7f080070
 int id cache_measures 0x7f080071
 int id callMeasure 0x7f080072
@@ -2989,6 +2988,7 @@ int id invisible 0x7f080105
 int id inward 0x7f080106
 int id italic 0x7f080107
 int id item_touch_helper_previous_elevation 0x7f080108
+int id iv 0x7f080222
 int id iv1 0x7f080109
 int id iv2 0x7f08010a
 int id iv3 0x7f08010b
@@ -3007,6 +3007,7 @@ int id linear 0x7f080117
 int id listMode 0x7f080118
 int id list_item 0x7f080119
 int id llEquipment 0x7f08011a
+int id map 0x7f08011b
 int id marquee 0x7f08011c
 int id masked 0x7f08011d
 int id match_constraint 0x7f08011e
@@ -3416,6 +3417,7 @@ int layout design_navigation_menu_item 0x7f0b0030
 int layout design_text_input_end_icon 0x7f0b0031
 int layout design_text_input_start_icon 0x7f0b0032
 int layout equipments_row 0x7f0b0033
+int layout image_dialog 0x7f0b0071
 int layout image_row 0x7f0b0034
 int layout m3_alert_dialog 0x7f0b0035
 int layout m3_alert_dialog_actions 0x7f0b0036

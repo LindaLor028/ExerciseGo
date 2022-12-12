@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] /Users/lindalor/.gradle/caches/transforms-3/618a1b119a8602d36f5e4bffd448d8a1/transformed/viewbinding-7.2.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:2:1-20:12
@@ -70,22 +70,22 @@ MERGED from [androidx.print:print:1.0.0] /Users/lindalor/.gradle/caches/transfor
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/lindalor/.gradle/caches/transforms-3/2008d80753d389f1963679a3ae8c51ad/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/lindalor/.gradle/caches/transforms-3/19edb1a43c5e4335a9ba71bd4ede6bf0/transformed/grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/49d129adfc70ab91e7a543949ea0fbc4/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:4:5-40
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:11-69
@@ -110,7 +110,7 @@ MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gra
 	android:name
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-49:19
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-50:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:10:5-18:19
@@ -182,51 +182,51 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/cac
 	android:dataExtractionRules
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:12:9-65
 activity#com.macalester.exercisego.LoginActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:9-26:20
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:9-32:20
 	android:exported
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:23:13-36
 	android:theme
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:24:13-60
 	android:name
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:22:13-42
-activity#com.macalester.exercisego.ReviewActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:9-29:40
-	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:13-37
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:28:13-43
-activity#com.macalester.exercisego.DetailsActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:30:9-33:52
-	android:label
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-49
-	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:31:13-44
-meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-37:71
-	android:value
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-68
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-58
-activity#com.macalester.exercisego.MapsActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:9-48:20
-	android:label
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-45
-	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:13-36
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-47:29
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:17-69
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:25-66
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:17-77
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:27-74
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:27-74
+activity#com.macalester.exercisego.ReviewActivity
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:9-35:40
+	android:exported
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:34:13-43
+activity#com.macalester.exercisego.DetailsActivity
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:9-39:52
+	android:label
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-49
+	android:exported
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-44
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:9-43:71
+	android:value
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-68
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:42:13-58
+activity#com.macalester.exercisego.MapsActivity
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:9-49:20
+	android:label
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:47:13-45
+	android:exported
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:13-41
 uses-sdk
 INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml

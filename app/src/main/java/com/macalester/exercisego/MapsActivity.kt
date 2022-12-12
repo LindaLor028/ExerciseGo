@@ -31,6 +31,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         const val PARKS_COLLECTION = "parks"
         const val REVIEWS_COLLECTION = "reviews"
         const val PARK_ID = "parkID"
+        const val URL_KEY = "imgURL"
     }
 
     private lateinit var mMap: GoogleMap
@@ -56,27 +57,28 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         adapter = NearbyAdapter(this)
         binding.rvNearbyParks.adapter = adapter
 
-//        val mapFragment = supportFragmentManager
-//            .findFragmentById(R.id.map) as SupportMapFragment
-//        mapFragment.getMapAsync(this)
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
 
         locationManager = getSystemService(android.content.Context.LOCATION_SERVICE) as android.location.LocationManager
         shareUserLocation()
-//        addParkMarkers()
-
-        binding.btnTest.setOnClickListener {
-            uploadPark()
-            calculateParkDistance()
-        }
+        addParkMarkers()
 
         queryParks()
     }
 
+    /**
+     * Resumes the location-reading on resume.
+     */
     override fun onResume() {
         super.onResume()
         pause = false
     }
 
+    /**
+     * Pauses the location-reading on stop.
+     */
     override fun onStop() {
         super.onStop()
         pause = true
@@ -165,12 +167,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
 
     /**
      * Adds marker for first three parks.
-     * TODO: Update this when you have enough parks LMAO
      */
     private fun addParkMarkers() {
         FirebaseFirestore.getInstance().collection(PARKS_COLLECTION).get().addOnSuccessListener {
             val parks = it.documents
-//            parks.subList(0,3)
             for (park in parks) {
                 val parkObj = park.toObject(Park::class.java)
                 addMarker(parkObj!!)
@@ -200,33 +200,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
                 postsCollection.document(park.id).update("distance", startLocation.distanceTo(parkLocation)/1000)
             }
         }
-    }
-
-    /**
-     * TODO: Delete Later!
-     */
-    private fun uploadPark() {
-        val parkLat = 47.538559
-        val parkLong = 19.066080
-
-        val testPark =
-            Park("Margaret Island Workout Park" , "Budapest, 1138 Hungary" , parkLat, parkLong , 0.0, false, false, false, false, true, true)
-
-        val postsCollection = FirebaseFirestore.getInstance()
-            .collection(PARKS_COLLECTION)
-
-        postsCollection.add(testPark)
-            .addOnSuccessListener {
-                Toast.makeText(this,
-                    "Park saved", Toast.LENGTH_SHORT).show()
-
-                finish()
-            }
-            .addOnFailureListener{
-                Toast.makeText(this,
-                    "Error: ${it.message}",
-                    Toast.LENGTH_SHORT).show()
-            }
     }
 
     /**

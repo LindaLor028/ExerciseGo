@@ -2836,7 +2836,6 @@ id btnLogin
 id btnRegister
 id btnReview
 id btnSubmit
-id btnTest
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2990,6 +2989,7 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv
 id iv1
 id iv2
 id iv3
@@ -3008,6 +3008,7 @@ id linear
 id listMode
 id list_item
 id llEquipment
+id map
 id marquee
 id masked
 id match_constraint
@@ -3417,6 +3418,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout equipments_row
+layout image_dialog
 layout image_row
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

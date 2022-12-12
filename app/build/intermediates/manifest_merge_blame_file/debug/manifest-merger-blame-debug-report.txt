@@ -42,7 +42,7 @@
 26    </queries>
 27
 28    <application
-28-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-49:19
+28-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-50:19
 29        android:allowBackup="true"
 29-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:11:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -64,53 +64,53 @@
 39        android:theme="@style/Theme.ExerciseGo" >
 39-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:18:9-48
 40        <activity
-40-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:9-26:20
+40-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:9-32:20
 41            android:name="com.macalester.exercisego.LoginActivity"
 41-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:22:13-42
 42            android:exported="true"
 42-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:23:13-36
 43            android:theme="@style/Theme.Design.NoActionBar" >
 43-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:24:13-60
-44        </activity>
-45        <activity
-45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:9-29:40
-46            android:name="com.macalester.exercisego.ReviewActivity"
-46-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:28:13-43
-47            android:exported="false" />
-47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:13-37
-48        <activity
-48-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:30:9-33:52
-49            android:name="com.macalester.exercisego.DetailsActivity"
-49-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:31:13-44
-50            android:exported="false"
-50-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:13-37
-51            android:label="@string/park_details" />
-51-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-49
-52
-53        <meta-data
-53-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-37:71
-54            android:name="com.google.android.geo.API_KEY"
-54-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-58
-55            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" /> <!-- API KEY -->
-55-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-68
-56        <activity
-56-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:9-48:20
-57            android:name="com.macalester.exercisego.MapsActivity"
-57-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-41
-58            android:exported="true"
-58-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:13-36
-59            android:label="@string/app_name" >
-59-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-45
-60            <intent-filter>
-60-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-47:29
-61                <action android:name="android.intent.action.MAIN" />
-61-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:17-69
-61-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:25-66
-62
-63                <category android:name="android.intent.category.LAUNCHER" />
-63-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:17-77
-63-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:27-74
-64            </intent-filter>
+44            <intent-filter>
+44-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:13-30:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:17-69
+45-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:17-77
+47-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:9-35:40
+51            android:name="com.macalester.exercisego.ReviewActivity"
+51-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:34:13-43
+52            android:exported="false" />
+52-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:13-37
+53        <activity
+53-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:9-39:52
+54            android:name="com.macalester.exercisego.DetailsActivity"
+54-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-44
+55            android:exported="false"
+55-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:13-37
+56            android:label="@string/park_details" />
+56-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-49
+57
+58        <meta-data
+58-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:9-43:71
+59            android:name="com.google.android.geo.API_KEY"
+59-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:42:13-58
+60            android:value="AIzaSyAsC-ZnehlYOJbV069_NUdEB_EkQvnLoMw" /> <!-- API KEY -->
+60-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-68
+61        <activity
+61-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:9-49:20
+62            android:name="com.macalester.exercisego.MapsActivity"
+62-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:13-41
+63            android:exported="true"
+63-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:13-36
+64            android:label="@string/app_name" >
+64-->/Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:47:13-45
 65        </activity>
 66
 67        <service

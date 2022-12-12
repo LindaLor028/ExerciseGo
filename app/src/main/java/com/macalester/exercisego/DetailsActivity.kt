@@ -14,6 +14,7 @@ import com.macalester.exercisego.adapter.ReviewAdapter
 import com.macalester.exercisego.data.Park
 import com.macalester.exercisego.data.Review
 import com.macalester.exercisego.databinding.ActivityDetailsBinding
+import com.macalester.exercisego.dialog.ImageDialog
 
 /**
  * Code written by Linda Lor (LindaLor028 on GitHub).
@@ -24,6 +25,7 @@ class DetailsActivity : AppCompatActivity() {
     lateinit var adapter : ReviewAdapter
     private var snapshotListener : ListenerRegistration? = null
     private var parkID = ""
+    private lateinit var park : Park
 
     /**
      * Creates DetailsActivity and updates UI as needed.
@@ -38,7 +40,7 @@ class DetailsActivity : AppCompatActivity() {
         parkID = intent.getStringExtra(MapsActivity.PARK_ID)!!
         var firebasePark = FirebaseFirestore.getInstance().collection(MapsActivity.PARKS_COLLECTION).document(parkID)
         firebasePark.get().addOnSuccessListener {
-            val park = it.toObject(Park::class.java)
+            park = it.toObject(Park::class.java)!!
             adapter = ReviewAdapter(this)
             binding.rvReviews.adapter = adapter
             setContentView(binding.root)
@@ -48,6 +50,19 @@ class DetailsActivity : AppCompatActivity() {
 
             binding.btnReview.setOnClickListener {
                 startReviewActivity()
+            }
+
+            binding.imageRow.iv1.setOnClickListener {
+                showImageDialog(park!!.imgURL_1)
+            }
+            binding.imageRow.iv2.setOnClickListener {
+                showImageDialog(park!!.imgURL_2)
+            }
+            binding.imageRow.iv3.setOnClickListener {
+                showImageDialog(park!!.imgURL_3)
+            }
+            binding.imageRow.iv4.setOnClickListener {
+                showImageDialog(park!!.imgURL_4)
             }
         }
     }
@@ -59,40 +74,40 @@ class DetailsActivity : AppCompatActivity() {
         binding.tvParkName.text = park!!.name
         binding.tvAddress.text = park!!.address
 
-        setUpEquipmentRow(park)
-        setImages(park)
+        setUpEquipmentRow()
+        setImages()
     }
 
     /**
      * Goes through park exercise equipment attributes and sets the visibility of
      * each equipment as needed.
      */
-    private fun setUpEquipmentRow(park: Park) {
-        if (park.hasBar) {
+    private fun setUpEquipmentRow() {
+        if (park!!.hasBar) {
             binding.equipmentsRow.imgBars.visibility = View.VISIBLE
             binding.equipmentsRow.tvBars.visibility = View.VISIBLE
         }
-        if (park.hasBench) {
+        if (park!!.hasBench) {
             binding.equipmentsRow.imgBench.visibility = View.VISIBLE
             binding.equipmentsRow.tvBenches.visibility = View.VISIBLE
         }
-        if (park.hasCycle) {
+        if (park!!.hasCycle) {
             binding.equipmentsRow.imgCycle.visibility = View.VISIBLE
             binding.equipmentsRow.tvCycles.visibility = View.VISIBLE
         }
-        if (park.hasPress) {
+        if (park!!.hasPress) {
             binding.equipmentsRow.imgPress.visibility = View.VISIBLE
             binding.equipmentsRow.tvPresses.visibility = View.VISIBLE
         }
-        if (park.hasTwister) {
+        if (park!!.hasTwister) {
             binding.equipmentsRow.imgTwist.visibility = View.VISIBLE
             binding.equipmentsRow.tvTwisters.visibility = View.VISIBLE
         }
-        if (park.hasPress) {
+        if (park!!.hasPress) {
             binding.equipmentsRow.imgPress.visibility = View.VISIBLE
             binding.equipmentsRow.tvPresses.visibility = View.VISIBLE
         }
-        if(park.hasWalker) {
+        if(park!!.hasWalker) {
             binding.equipmentsRow.imgWalker.visibility = View.VISIBLE
             binding.equipmentsRow.tvWalkers.visibility = View.VISIBLE
         }
@@ -101,11 +116,11 @@ class DetailsActivity : AppCompatActivity() {
     /**
      * Sets up all four images of park based on its image URL.
      */
-    private fun setImages(park : Park) {
-        setParkImage(binding.imageRow.iv1, park.imgURL_1)
-        setParkImage(binding.imageRow.iv2, park.imgURL_2)
-        setParkImage(binding.imageRow.iv3, park.imgURL_3)
-        setParkImage(binding.imageRow.iv4, park.imgURL_4)
+    private fun setImages() {
+        setParkImage(binding.imageRow.iv1, park!!.imgURL_1)
+        setParkImage(binding.imageRow.iv2, park!!.imgURL_2)
+        setParkImage(binding.imageRow.iv3, park!!.imgURL_3)
+        setParkImage(binding.imageRow.iv4, park!!.imgURL_4)
     }
 
     /**
@@ -121,6 +136,19 @@ class DetailsActivity : AppCompatActivity() {
         else {
             img.visibility = View.GONE
         }
+    }
+
+    /**
+     * Shows ImageDialog and sends appropriate URL through arguments.
+     */
+    private fun showImageDialog(url: String) {
+        val itemDialog = ImageDialog()
+
+        val bundle = Bundle()
+        bundle.putSerializable(MapsActivity.URL_KEY, url)
+        itemDialog.arguments = bundle
+
+        itemDialog.show(supportFragmentManager, MapsActivity.URL_KEY)
     }
 
     /**

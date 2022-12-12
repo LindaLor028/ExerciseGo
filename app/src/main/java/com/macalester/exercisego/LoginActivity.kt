@@ -15,6 +15,9 @@ class LoginActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityLoginBinding
 
+    /**
+     * Creates LoginActivity.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -29,7 +32,10 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun registerUser() {
+    /**
+     * Registers User into Firebase Authentication using email and password.
+     */
+    private fun registerUser() {
         if (isFormValid()) {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(
                 binding.etEmail.text.toString(),
@@ -51,7 +57,10 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    fun loginUser() {
+    /**
+     * Logs in user; verifies if their account is with firebase or not.
+     */
+    private fun loginUser() {
         if (isFormValid()) {
             FirebaseAuth.getInstance().signInWithEmailAndPassword(
                 binding.etEmail.text.toString(),
@@ -74,6 +83,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * Checks whether edit texts are valid; if not, informs the user.
+     */
     fun isFormValid(): Boolean {
         return when {
             binding.etEmail.text.isEmpty() -> {
