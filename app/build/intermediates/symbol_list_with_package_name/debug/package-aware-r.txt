@@ -2593,10 +2593,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable almassy1
-drawable almassy2
-drawable almassy3
-drawable almassy4
 drawable appicon
 drawable avd_hide_password
 drawable avd_show_password
@@ -2661,8 +2657,6 @@ drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable marg1
 drawable marg2
-drawable marg3
-drawable marg4
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2729,8 +2723,6 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twistericon
 drawable walkericon
-drawable workout1
-drawable workout2
 drawable workout3
 drawable workout4
 id ALT
@@ -3016,7 +3008,6 @@ id linear
 id listMode
 id list_item
 id llEquipment
-id map
 id marquee
 id masked
 id match_constraint

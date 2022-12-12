@@ -56,13 +56,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
         adapter = NearbyAdapter(this)
         binding.rvNearbyParks.adapter = adapter
 
-        val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.map) as SupportMapFragment
-        mapFragment.getMapAsync(this)
+//        val mapFragment = supportFragmentManager
+//            .findFragmentById(R.id.map) as SupportMapFragment
+//        mapFragment.getMapAsync(this)
 
         locationManager = getSystemService(android.content.Context.LOCATION_SERVICE) as android.location.LocationManager
         shareUserLocation()
-        addParkMarkers()
+//        addParkMarkers()
 
         binding.btnTest.setOnClickListener {
             uploadPark()
@@ -197,7 +197,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
                 startLocation.latitude = userLocation.latitude
                 startLocation.longitude = userLocation.longitude
 
-                postsCollection.document(park.id).update("distance", startLocation.distanceTo(parkLocation))
+                postsCollection.document(park.id).update("distance", startLocation.distanceTo(parkLocation)/1000)
             }
         }
     }
@@ -234,10 +234,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
      */
     override fun onLocationChanged(location: Location) {
         userLocation = LatLng(location.latitude, location.longitude)
+        calculateParkDistance()
     }
 
     /**
-     * TODO: ADD COMMENT
+     * When app is closed, remove snapshopListener to prevent background reading.
      */
     override fun onDestroy() {
         super.onDestroy()

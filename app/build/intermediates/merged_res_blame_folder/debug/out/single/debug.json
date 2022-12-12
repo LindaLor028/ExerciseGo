@@ -4,16 +4,20 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/appicon.png"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_workout2.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/workout2.jpg"
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_almassy4.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/almassy4.jpg"
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_workout4.jpg.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/workout4.jpg"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_twistericon.png.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/twistericon.png"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_marg1.jpg.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/marg1.jpg"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_walkericon.png.flat",
@@ -28,6 +32,10 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_activity_details.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/activity_details.xml"
     },
@@ -36,8 +44,8 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_almassy1.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/almassy1.jpg"
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_activity_login.xml.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/activity_login.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_content_scrolling.xml.flat",
@@ -68,16 +76,32 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_equipmenticons.png.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/equipmenticons.png"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_equipments_row.xml.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/equipments_row.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_workout3.jpg.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/workout3.jpg"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.macalester.exercisego.app-merged_res-36:/layout_park_row.xml.flat",
+        "source": "com.macalester.exercisego.app-main-38:/layout/park_row.xml"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout-w1240dp_content_scrolling.xml.flat",
@@ -92,78 +116,6 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/activity_review.xml"
     },
     {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_review_row.xml.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/review_row.xml"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_marg3.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/marg3.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_almassy2.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/almassy2.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_workout4.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/workout4.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_marg1.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/marg1.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_activity_login.xml.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/activity_login.xml"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_almassy3.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/almassy3.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_marg4.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/marg4.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_workout1.jpg.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/workout1.jpg"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_equipmenticons.png.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/equipmenticons.png"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_equipments_row.xml.flat",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/equipments_row.xml"
-    },
-    {
-        "merged": "com.macalester.exercisego.app-merged_res-36:/layout_image_row.xml.flat",
-        "source": "com.macalester.exercisego.app-main-38:/layout/image_row.xml"
-    },
-    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_loginlogo.png.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/loginlogo.png"
     },
@@ -176,6 +128,10 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout_review_row.xml.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/layout/review_row.xml"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
     },
@@ -184,8 +140,16 @@
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/cycleicon.png"
     },
     {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_pressicon.png.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/drawable/pressicon.png"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/layout-w936dp_content_scrolling.xml.flat",
@@ -194,6 +158,10 @@
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-38:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-merged_res-36:/drawable_barsicon.png.flat",

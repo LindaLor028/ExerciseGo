@@ -3,13 +3,17 @@ package com.macalester.exercisego.adapter
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.macalester.exercisego.DetailsActivity
 import com.macalester.exercisego.MapsActivity
 import com.macalester.exercisego.data.Park
 import com.macalester.exercisego.databinding.ParkRowBinding
+import java.math.RoundingMode
+import java.text.DecimalFormat
 
 /**
  * Code adapted from Péter Ekler 's To do Recycler Demo.
@@ -90,6 +94,8 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
     /**
      * An inner class that represents a singular row for a park.
      * It manages binding and updating the UI based on the park details.
+     * Decimal formatting code provdided by stackoverflow user, Gaurang Goda.
+     * https://stackoverflow.com/questions/49011924/round-double-to-1-decimal-place-kotlin-from-0-044999-to-0-1
      */
     inner class ViewHolder(private val parkRowBinding: ParkRowBinding) :
         RecyclerView.ViewHolder(parkRowBinding.root)
@@ -98,18 +104,20 @@ class NearbyAdapter : RecyclerView.Adapter<NearbyAdapter.ViewHolder> {
 
             parkRowBinding.tvRowName.text = park.name
 
-            var distance = park.distance.toString()
-            if (distance.length > 3) {
-                distance = distance.substring(0..1)
-            }
+            val df = DecimalFormat("#.##")
+            df.roundingMode = RoundingMode.CEILING
+            var distance =  df.format(park.distance)
+
             parkRowBinding.tvRowDistance.text = "${distance} m"
+
+            Glide.with(context).load(park.imgURL_3).into (
+                parkRowBinding.imageView
+            )
 
             parkRowBinding.background.setOnClickListener {
                 val index = parksList.indexOf(park)
                 startDetailsActivity(index)
             }
-
-
         }
     }
 }

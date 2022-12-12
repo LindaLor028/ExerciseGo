@@ -181,4 +181,12 @@ class DetailsActivity : AppCompatActivity() {
         }
         snapshotListener = queryReviews.addSnapshotListener(eventListener)
     }
+
+    /**
+     * When app is closed, remove snapshopListener to prevent background reading.
+     */
+    override fun onDestroy() {
+        super.onDestroy()
+        snapshotListener?.remove()
+    }
 }
