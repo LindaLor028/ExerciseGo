@@ -21,7 +21,7 @@ Thank you for checkin' out my app, and we hope you enjoy exercise parks as much 
 
 
 
-**Game Development Notes** 
+**Development Notes** 
 
 For individuals interested in developing a similar app, please read all information below. 
 
@@ -35,6 +35,17 @@ CODE: A vast majority of the code is written by Linda Lor (me), but there are ch
 ... Péter Ekler : LoginActivity, Adapter Classes 
 ... Arjun Shrestha : Back Button code in ReviewActivity and DetailsActivity
 ... JavaPaper.com (Joe) : Current Location code in MapsActivity
+... Gaurang Goda : DetailsActivity, Decimal formatting code
+
+**Future Improvements** 
+
+I hope this app can inspire others to create something similar and even better! Here are some future improvements to consider if you'd like to extend this app : 
+... Making Google Maps implementation a lot more intentional with markers and onMapClick Listeners. 
+... A Favorite Parks activity that lists user's favorite parks
+... Using Google Fit's API and making the app even more "exercise" friendly 
+... Adding images to user reviews 
+... Calculating the average of all reviews 
+
 
 
 
