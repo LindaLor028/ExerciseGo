@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.macalester.exercisego.app-mergeDebugResources-33:/values-sv/values-sv.xml",
+            "outputFile": "com.macalester.exercisego.app-mergeDebugResources-34:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "/Users/lindalor/.gradle/caches/transforms-3/e839cac1e514c3c6ed5984b4443bec6b/transformed/browser-1.4.0/res/values-sv/values-sv.xml",

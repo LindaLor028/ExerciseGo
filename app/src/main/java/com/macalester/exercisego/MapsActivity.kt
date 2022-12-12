@@ -206,11 +206,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
      * TODO: Delete Later!
      */
     private fun uploadPark() {
-        val parkLat = 47.5057808
-        val parkLong = 19.0669936
+        val parkLat = 47.538559
+        val parkLong = 19.066080
 
         val testPark =
-            Park("Hunyadi Tér" , "Budapest, Hunyadi tér, 1067 Hungary" , parkLat, parkLong , 0.0, false, true, true, false, true)
+            Park("Margaret Island Workout Park" , "Budapest, 1138 Hungary" , parkLat, parkLong , 0.0, false, false, false, false, true, true)
 
         val postsCollection = FirebaseFirestore.getInstance()
             .collection(PARKS_COLLECTION)
@@ -234,5 +234,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, LocationListener {
      */
     override fun onLocationChanged(location: Location) {
         userLocation = LatLng(location.latitude, location.longitude)
+    }
+
+    /**
+     * TODO: ADD COMMENT
+     */
+    override fun onDestroy() {
+        super.onDestroy()
+        snapshotListener?.remove()
     }
 }

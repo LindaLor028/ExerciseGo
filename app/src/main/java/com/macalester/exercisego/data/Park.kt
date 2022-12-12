@@ -17,6 +17,13 @@ data class Park(
     var hasPress : Boolean = false,
     var hasWalker : Boolean = false,
     var hasBar : Boolean = false,
-    var hasBench : Boolean = false
+    var hasBench : Boolean = false,
+
+    // image URLS
+    var imgURL_1 : String = "",
+    var imgURL_2 : String = "",
+    var imgURL_3 : String = "",
+    var imgURL_4 : String = ""
+
 
 )

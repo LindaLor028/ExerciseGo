@@ -1,11 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] /Users/lindalor/.gradle/caches/transforms-3/618a1b119a8602d36f5e4bffd448d8a1/transformed/viewbinding-7.2.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:2:1-20:12
 MERGED from [com.google.android.material:material:1.7.0] /Users/lindalor/.gradle/caches/transforms-3/3924d4b5eadf832ed804b50622f87a97/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/lindalor/.gradle/caches/transforms-3/195765601dcae3658ae82b616d3818c2/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -13,8 +14,10 @@ MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /Users/lindalor/.grad
 MERGED from [androidx.appcompat:appcompat:1.5.1] /Users/lindalor/.gradle/caches/transforms-3/039078dcacc034c236db5bfb87d5bfe7/transformed/appcompat-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:17:1-73:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/fa9315718504c3eceec7df75c75e782c/transformed/glide-4.12.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/a56941b0afbd55d2876a7909e6c28d4b/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/62a2dc7a09fc768b6a83fd11f798c82d/transformed/play-services-location-18.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/lindalor/.gradle/caches/transforms-3/8c51aed2ebe4718030ea905da8089443/transformed/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/lindalor/.gradle/caches/transforms-3/9aad85962ee75526cd62d0bb2076bea7/transformed/play-services-safetynet-17.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:2:1-25:12
@@ -53,6 +56,8 @@ MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/lindalor/.gradle/cache
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/3ff6fce1447c9fdc9eabedf014987ee4/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/6650ad5a2e6a8c75281a067c7b71d22b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/lindalor/.gradle/caches/transforms-3/5596b57615dab47b54a04dd8216637e3/transformed/firebase-components-17.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/e0dd5c7cb7794ca102d4692cc2893bc3/transformed/gifdecoder-4.12.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/7517179efd59d9903293a149a9e1d1f0/transformed/exifinterface-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/9a9328a99e70fa4890e3ff41a11734bc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/e686dd962b23400308db46f890f97780/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/a50e540832ff0c199b7180164be6c4dd/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -65,22 +70,22 @@ MERGED from [androidx.print:print:1.0.0] /Users/lindalor/.gradle/caches/transfor
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/lindalor/.gradle/caches/transforms-3/2008d80753d389f1963679a3ae8c51ad/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/lindalor/.gradle/caches/transforms-3/19edb1a43c5e4335a9ba71bd4ede6bf0/transformed/grpc-android-1.48.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/49d129adfc70ab91e7a543949ea0fbc4/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
-INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:4:5-40
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-50:12
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:1-51:12
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:2:11-69
@@ -93,19 +98,23 @@ ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManife
 	android:name
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:8:5-66
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:8:22-64
 application
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-48:19
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:10:5-49:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:10:5-18:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:10:5-18:19
 MERGED from [com.google.android.material:material:1.7.0] /Users/lindalor/.gradle/caches/transforms-3/3924d4b5eadf832ed804b50622f87a97/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
@@ -116,8 +125,12 @@ MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:26:5-71:19
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/fa9315718504c3eceec7df75c75e782c/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/fa9315718504c3eceec7df75c75e782c/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/62a2dc7a09fc768b6a83fd11f798c82d/transformed/play-services-location-18.0.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/62a2dc7a09fc768b6a83fd11f798c82d/transformed/play-services-location-18.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/lindalor/.gradle/caches/transforms-3/9aad85962ee75526cd62d0bb2076bea7/transformed/play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/lindalor/.gradle/caches/transforms-3/9aad85962ee75526cd62d0bb2076bea7/transformed/play-services-safetynet-17.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:15:5-23:19
@@ -142,6 +155,8 @@ MERGED from [androidx.core:core:1.8.0] /Users/lindalor/.gradle/caches/transforms
 MERGED from [androidx.core:core:1.8.0] /Users/lindalor/.gradle/caches/transforms-3/d9cfb59225429d79f01f193f3db4f638/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/lindalor/.gradle/caches/transforms-3/4b5cbabfc08538693664ae08c75d5e23/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/e0dd5c7cb7794ca102d4692cc2893bc3/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/e0dd5c7cb7794ca102d4692cc2893bc3/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/9a9328a99e70fa4890e3ff41a11734bc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/9a9328a99e70fa4890e3ff41a11734bc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/e686dd962b23400308db46f890f97780/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
@@ -167,51 +182,51 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/cac
 	android:dataExtractionRules
 		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:12:9-65
 activity#com.macalester.exercisego.LoginActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:20:9-30:20
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:9-26:20
 	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:22:13-36
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:23:13-36
 	android:theme
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:23:13-60
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:24:13-60
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:21:13-42
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:25:13-28:29
-action#android.intent.action.MAIN
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:17-69
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:26:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:17-77
-	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:27-74
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:22:13-42
 activity#com.macalester.exercisego.ReviewActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:9-34:40
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:27:9-29:40
 	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:34:13-37
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-43
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:28:13-43
 activity#com.macalester.exercisego.DetailsActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-38:52
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:30:9-33:52
 	android:label
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:13-49
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:33:13-49
 	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:31:13-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:9-42:71
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:35:9-37:71
 	android:value
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:42:13-68
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:37:13-68
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-58
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:36:13-58
 activity#com.macalester.exercisego.MapsActivity
-ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:9-47:20
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:38:9-48:20
 	android:label
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:13-45
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:41:13-45
 	android:exported
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:45:13-36
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:40:13-36
 	android:name
-		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:13-41
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:39:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:43:13-47:29
+action#android.intent.action.MAIN
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:17-69
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
@@ -220,6 +235,8 @@ MERGED from [androidx.databinding:viewbinding:7.2.2] /Users/lindalor/.gradle/cac
 MERGED from [androidx.databinding:viewbinding:7.2.2] /Users/lindalor/.gradle/caches/transforms-3/618a1b119a8602d36f5e4bffd448d8a1/transformed/viewbinding-7.2.2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.7.0] /Users/lindalor/.gradle/caches/transforms-3/3924d4b5eadf832ed804b50622f87a97/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
@@ -234,10 +251,14 @@ MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.
 MERGED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:21:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/fa9315718504c3eceec7df75c75e782c/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/fa9315718504c3eceec7df75c75e782c/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/a56941b0afbd55d2876a7909e6c28d4b/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/a56941b0afbd55d2876a7909e6c28d4b/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/62a2dc7a09fc768b6a83fd11f798c82d/transformed/play-services-location-18.0.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:18.0.0] /Users/lindalor/.gradle/caches/transforms-3/62a2dc7a09fc768b6a83fd11f798c82d/transformed/play-services-location-18.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/lindalor/.gradle/caches/transforms-3/8c51aed2ebe4718030ea905da8089443/transformed/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/lindalor/.gradle/caches/transforms-3/8c51aed2ebe4718030ea905da8089443/transformed/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-safetynet:17.0.0] /Users/lindalor/.gradle/caches/transforms-3/9aad85962ee75526cd62d0bb2076bea7/transformed/play-services-safetynet-17.0.0/AndroidManifest.xml:20:5-44
@@ -314,6 +335,10 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/lindalor/.gradle/caches/transforms-3/6650ad5a2e6a8c75281a067c7b71d22b/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/lindalor/.gradle/caches/transforms-3/5596b57615dab47b54a04dd8216637e3/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:17.0.1] /Users/lindalor/.gradle/caches/transforms-3/5596b57615dab47b54a04dd8216637e3/transformed/firebase-components-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/e0dd5c7cb7794ca102d4692cc2893bc3/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/lindalor/.gradle/caches/transforms-3/e0dd5c7cb7794ca102d4692cc2893bc3/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/7517179efd59d9903293a149a9e1d1f0/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/lindalor/.gradle/caches/transforms-3/7517179efd59d9903293a149a9e1d1f0/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/9a9328a99e70fa4890e3ff41a11734bc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/9a9328a99e70fa4890e3ff41a11734bc/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/lindalor/.gradle/caches/transforms-3/e686dd962b23400308db46f890f97780/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
@@ -350,10 +375,14 @@ INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidMan
 		INJECTED from /Users/lindalor/Desktop/CLASSES/ExerciseGo/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:11:9-17:19
+MERGED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:11:9-17:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:64:9-70:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-common:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/a912f813118238f4fb3633725e4b171f/transformed/firebase-common-20.2.0/AndroidManifest.xml:32:9-36:35
@@ -372,6 +401,12 @@ ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore-ktx:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/a99f79bfaa23a29e5ce99e117a638fad/transformed/firebase-firestore-ktx-24.4.0/AndroidManifest.xml:15:17-126
+meta-data#com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar
+ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:14:13-16:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:16:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage-ktx:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/ad95568f966967e9d1c556e22d6ede91/transformed/firebase-storage-ktx-20.1.0/AndroidManifest.xml:15:17-122
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:20.2.0] /Users/lindalor/.gradle/caches/transforms-3/92b73c4df554ed78e7050cd54dd9b1fc/transformed/firebase-common-ktx-20.2.0/AndroidManifest.xml:14:13-16:85
 	android:value
@@ -382,6 +417,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:18.1.0] /Users/lindalor/.gradle/caches/transforms-3/107256d120c190a4e936ff16bd9a21ba/transformed/play-services-maps-18.1.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:12:5-79
 MERGED from [io.grpc:grpc-android:1.48.1] /Users/lindalor/.gradle/caches/transforms-3/19edb1a43c5e4335a9ba71bd4ede6bf0/transformed/grpc-android-1.48.1/AndroidManifest.xml:9:5-79
@@ -460,6 +497,12 @@ ADDED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/ca
 		ADDED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:21.1.0] /Users/lindalor/.gradle/caches/transforms-3/6dac61afd2810e0536643848b86b05db/transformed/firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.1.0] /Users/lindalor/.gradle/caches/transforms-3/53560b36938a2b8c7a59b36ae4494383/transformed/firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:24.4.0] /Users/lindalor/.gradle/caches/transforms-3/7df62edd23d551dd05a862b02fe782f8/transformed/firebase-firestore-24.4.0/AndroidManifest.xml:19:13-21:85
 	android:value

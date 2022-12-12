@@ -2593,6 +2593,10 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable almassy1
+drawable almassy2
+drawable almassy3
+drawable almassy4
 drawable appicon
 drawable avd_hide_password
 drawable avd_show_password
@@ -2655,6 +2659,10 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable marg1
+drawable marg2
+drawable marg3
+drawable marg4
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2721,6 +2729,10 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable twistericon
 drawable walkericon
+drawable workout1
+drawable workout2
+drawable workout3
+drawable workout4
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2940,6 +2952,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -2962,6 +2975,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageRow
 id imageView
 id imageView3
 id imageView4
@@ -2984,6 +2998,10 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv1
+id iv2
+id iv3
+id iv4
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3408,6 +3426,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout equipments_row
+layout image_row
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

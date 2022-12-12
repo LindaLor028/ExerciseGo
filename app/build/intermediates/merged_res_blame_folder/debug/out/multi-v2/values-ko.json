@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.macalester.exercisego.app-mergeDebugResources-33:/values-ko/values-ko.xml",
+            "outputFile": "com.macalester.exercisego.app-mergeDebugResources-34:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "/Users/lindalor/.gradle/caches/transforms-3/4d1c358a8805fdd7782c02fa75ea806f/transformed/play-services-base-18.0.1/res/values-ko/values.xml",

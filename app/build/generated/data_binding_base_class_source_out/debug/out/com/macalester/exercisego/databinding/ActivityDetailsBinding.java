@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -37,19 +36,7 @@ public final class ActivityDetailsBinding implements ViewBinding {
   public final HorizontalScrollView horizontalScrollView;
 
   @NonNull
-  public final ImageView imageView5;
-
-  @NonNull
-  public final ImageView imageView6;
-
-  @NonNull
-  public final ImageView imageView7;
-
-  @NonNull
-  public final ImageView imageView8;
-
-  @NonNull
-  public final ImageView imageView9;
+  public final ImageRowBinding imageRow;
 
   @NonNull
   public final LinearLayout llEquipment;
@@ -74,22 +61,16 @@ public final class ActivityDetailsBinding implements ViewBinding {
 
   private ActivityDetailsBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnReview,
       @NonNull View divider, @NonNull EquipmentsRowBinding equipmentsRow,
-      @NonNull HorizontalScrollView horizontalScrollView, @NonNull ImageView imageView5,
-      @NonNull ImageView imageView6, @NonNull ImageView imageView7, @NonNull ImageView imageView8,
-      @NonNull ImageView imageView9, @NonNull LinearLayout llEquipment,
-      @NonNull RecyclerView rvReviews, @NonNull HorizontalScrollView svEquipment,
-      @NonNull TextView textView3, @NonNull TextView tvAddress, @NonNull TextView tvParkName,
-      @NonNull TextView tvReviews) {
+      @NonNull HorizontalScrollView horizontalScrollView, @NonNull ImageRowBinding imageRow,
+      @NonNull LinearLayout llEquipment, @NonNull RecyclerView rvReviews,
+      @NonNull HorizontalScrollView svEquipment, @NonNull TextView textView3,
+      @NonNull TextView tvAddress, @NonNull TextView tvParkName, @NonNull TextView tvReviews) {
     this.rootView = rootView;
     this.btnReview = btnReview;
     this.divider = divider;
     this.equipmentsRow = equipmentsRow;
     this.horizontalScrollView = horizontalScrollView;
-    this.imageView5 = imageView5;
-    this.imageView6 = imageView6;
-    this.imageView7 = imageView7;
-    this.imageView8 = imageView8;
-    this.imageView9 = imageView9;
+    this.imageRow = imageRow;
     this.llEquipment = llEquipment;
     this.rvReviews = rvReviews;
     this.svEquipment = svEquipment;
@@ -151,35 +132,12 @@ public final class ActivityDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView5;
-      ImageView imageView5 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView5 == null) {
+      id = R.id.imageRow;
+      View imageRow = ViewBindings.findChildViewById(rootView, id);
+      if (imageRow == null) {
         break missingId;
       }
-
-      id = R.id.imageView6;
-      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView7;
-      ImageView imageView7 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView7 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView8;
-      ImageView imageView8 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView8 == null) {
-        break missingId;
-      }
-
-      id = R.id.imageView9;
-      ImageView imageView9 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView9 == null) {
-        break missingId;
-      }
+      ImageRowBinding binding_imageRow = ImageRowBinding.bind(imageRow);
 
       id = R.id.llEquipment;
       LinearLayout llEquipment = ViewBindings.findChildViewById(rootView, id);
@@ -224,9 +182,8 @@ public final class ActivityDetailsBinding implements ViewBinding {
       }
 
       return new ActivityDetailsBinding((ConstraintLayout) rootView, btnReview, divider,
-          binding_equipmentsRow, horizontalScrollView, imageView5, imageView6, imageView7,
-          imageView8, imageView9, llEquipment, rvReviews, svEquipment, textView3, tvAddress,
-          tvParkName, tvReviews);
+          binding_equipmentsRow, horizontalScrollView, binding_imageRow, llEquipment, rvReviews,
+          svEquipment, textView3, tvAddress, tvParkName, tvReviews);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

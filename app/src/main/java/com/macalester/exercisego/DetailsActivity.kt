@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.bumptech.glide.Glide
 import com.google.firebase.firestore.*
 import com.macalester.exercisego.adapter.ReviewAdapter
 import com.macalester.exercisego.data.Park
@@ -58,6 +60,7 @@ class DetailsActivity : AppCompatActivity() {
         binding.tvAddress.text = park!!.address
 
         setUpEquipmentRow(park)
+        setImages(park)
     }
 
     /**
@@ -92,6 +95,31 @@ class DetailsActivity : AppCompatActivity() {
         if(park.hasWalker) {
             binding.equipmentsRow.imgWalker.visibility = View.VISIBLE
             binding.equipmentsRow.tvWalkers.visibility = View.VISIBLE
+        }
+    }
+
+    /**
+     * Sets up all four images of park based on its image URL.
+     */
+    private fun setImages(park : Park) {
+        setParkImage(binding.imageRow.iv1, park.imgURL_1)
+        setParkImage(binding.imageRow.iv2, park.imgURL_2)
+        setParkImage(binding.imageRow.iv3, park.imgURL_3)
+        setParkImage(binding.imageRow.iv4, park.imgURL_4)
+    }
+
+    /**
+     * Sets up the one image of regarding the park.
+     */
+    private fun setParkImage(img : ImageView, url : String) {
+        if (url != "") {
+            img.visibility = View.VISIBLE
+            Glide.with(this).load(url).into (
+                img
+            )
+        }
+        else {
+            img.visibility = View.GONE
         }
     }
 

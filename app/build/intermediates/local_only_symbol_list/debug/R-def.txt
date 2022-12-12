@@ -10,6 +10,10 @@ color white
 dimen app_bar_height
 dimen fab_margin
 dimen text_margin
+drawable almassy1
+drawable almassy2
+drawable almassy3
+drawable almassy4
 drawable appicon
 drawable barsicon
 drawable benchicon
@@ -19,9 +23,17 @@ drawable exercisego
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable loginlogo
+drawable marg1
+drawable marg2
+drawable marg3
+drawable marg4
 drawable pressicon
 drawable twistericon
 drawable walkericon
+drawable workout1
+drawable workout2
+drawable workout3
+drawable workout4
 id action_settings
 id background
 id btnLogin
@@ -35,6 +47,7 @@ id etEmail
 id etPassword
 id etReviewInput
 id horizontalScrollView
+id imageRow
 id imageView
 id imageView3
 id imageView4
@@ -49,6 +62,10 @@ id imgCycle
 id imgPress
 id imgTwist
 id imgWalker
+id iv1
+id iv2
+id iv3
+id iv4
 id llEquipment
 id map
 id rating
@@ -78,6 +95,7 @@ layout activity_maps
 layout activity_review
 layout content_scrolling
 layout equipments_row
+layout image_row
 layout park_row
 layout review_row
 menu menu_main

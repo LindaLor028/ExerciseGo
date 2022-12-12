@@ -1,10 +1,6 @@
 [
     {
-        "merged": "com.macalester.exercisego.app-mergeDebugResources-34:/layout-w936dp-v13/content_scrolling.xml",
-        "source": "com.macalester.exercisego.app-main-37:/layout-w936dp/content_scrolling.xml"
-    },
-    {
-        "merged": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-mergeDebugResources-34:/layout-w936dp-v13/content_scrolling.xml",
-        "source": "/Users/lindalor/.gradle/daemon/7.3.3/com.macalester.exercisego.app-main-37:/layout-w936dp/content_scrolling.xml"
+        "merged": "com.macalester.exercisego.app-mergeDebugResources-35:/layout-w936dp-v13/content_scrolling.xml",
+        "source": "com.macalester.exercisego.app-main-38:/layout-w936dp/content_scrolling.xml"
     }
 ]
